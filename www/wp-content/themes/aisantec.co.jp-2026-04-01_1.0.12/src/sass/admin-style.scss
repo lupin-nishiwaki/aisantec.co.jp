@@ -1,0 +1,262 @@
+// ----------------------------------------
+// 初期設定・リセット
+@use "sass:math";
+@use "core/setting" as *;
+@use "core/mixin" as *;
+
+// * ----------------------------------------
+// * 管理バー
+#wpadminbar #wp-admin-bar-clear-cache,
+#contextual-help-link-wrap {
+  display: none;
+}
+
+#wpadminbar {
+  border-bottom: 1px solid #666;
+}
+
+#wpadminbar #wp-admin-bar-new_item_in_admin_bar .ab-item {
+  border-left: 1px solid #666;
+}
+
+.media-menu .media-menu-item#menu-item-playlist,
+.media-menu .media-menu-item#menu-item-video-playlist {
+  display: none;
+}
+
+// * ----------------------------------------
+// * サイドバー
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu,
+#adminmenu .wp-submenu {
+  width: 200px;
+}
+
+#adminmenu .opensub .wp-submenu {
+  left: 200px;
+  width: 200px;
+}
+
+#wpcontent,
+#wpfooter {
+  margin-left: 200px;
+}
+
+// * ----------------------------------------
+// * 【テーマ】カスタマイズ非表示
+#adminmenu {
+  .menu-icon-appearance {
+    .wp-submenu {
+      .hide-if-no-customize {
+        display: none;
+      }
+    }
+  }
+}
+
+// * ----------------------------------------
+// * ダッシュボード
+.welcome-panel-close,
+#screen-options-wrap label[for="wp_welcome_panel-hide"] {
+  display: none;
+}
+
+#welcome-panel {
+  display: block;
+}
+
+// * ウェルカムパネル
+.welcome-panel {
+  padding: 20px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px -10px;
+
+    @media #{$breakS} {
+      display: block;
+      margin: 5px 0 20px 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      box-sizing: border-box;
+      width: 20%;
+      margin-bottom: 0;
+      padding: 10px 0 0 10px;
+
+      @media #{$breakS} {
+        width: 100%;
+        padding: 5px 0 0 0;
+      }
+    }
+  }
+
+  .button {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 10px 15px;
+    font-size: 15px;
+    text-align: center;
+
+    @media #{$breakS} {
+      padding: 10px 0;
+    }
+
+    &:before {
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      font-size: 28px;
+      font-family: "dashicons";
+      transform: translateX(-50%);
+
+      @media #{$breakS} {
+        display: none;
+      }
+    }
+  }
+
+  // * アイコン参考 https://developer.wordpress.org/resource/dashicons/
+  .post-summary:before {
+    content: "\f322";
+  }
+
+  // * 記事一覧
+  .post-article:before {
+    content: "\f464";
+  }
+
+  // * 記事編集
+  .post-taxonomy:before {
+    content: "\f323";
+  }
+
+  // * タクソノミー
+  .post-page:before {
+    content: "\f105";
+  }
+
+  // * 固定ページ
+}
+
+// * ウィジェット
+#dashboard-widgets-wrap {
+  #dashboard_right_now {
+    ul {
+      li {
+        float: none;
+        width: 100%;
+
+        &.post-count:first-child,
+        &.comment-count,
+        &.comment-mod-count hidden {
+          display: none;
+        }
+      }
+    }
+
+    #wp-version-message {
+      display: none;
+    }
+  }
+
+  #dashboard_activity {
+    #latest-comments {
+      display: none;
+    }
+
+    #published-posts {
+      ul {
+        li {
+          span {
+            min-width: 85px;
+          }
+        }
+      }
+    }
+  }
+
+  .empty-container {
+    border: none;
+  }
+}
+
+// * ----------------------------------------
+// * 記事一覧
+.fixed .column-date,
+.fixed .column-thumbnail,
+.fixed .column-thumbnail img,
+.fixed .column-postid {
+  width: 110px;
+}
+
+.fixed .column-category {
+  width: 150px;
+}
+
+.fixed .column-thumbnail {
+  text-align: center;
+}
+
+// * ----------------------------------------
+// * 記事編集
+#taxonomy-tax_news {
+  padding-top: 5px;
+
+  #tax_news-tabs,
+  #tax_news-adder {
+    display: none;
+  }
+
+  #tax_news-all {
+    border: none;
+    padding: 0;
+
+    #tax_newschecklist {
+      margin: 0;
+    }
+  }
+
+  #newcat_news_parent {
+    display: none;
+  }
+}
+
+// * ----------------------------------------
+// * Taxonomy Order
+#cpt_info_box {
+  display: none;
+}
+
+// * ----------------------------------------
+// * メディアの不要オプション非表示
+.attachment-details {
+
+  label[data-setting="album"],
+  label[data-setting="caption"],
+  label[data-setting="description"] {
+    display: none;
+  }
+}
+
+// * ----------------------------------------
+// * ギャラリーのリンク先非表示
+.media-sidebar {
+  .gallery-settings {
+    .setting {
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+}

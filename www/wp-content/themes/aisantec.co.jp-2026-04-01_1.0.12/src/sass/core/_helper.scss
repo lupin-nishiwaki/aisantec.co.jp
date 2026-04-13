@@ -1,0 +1,59 @@
+@use "sass:math";
+@use "setting" as *;
+@use "mixin" as *;
+
+.pc-hide {
+  display: none;
+
+  @media #{$breakS} {
+    display: block;
+  }
+}
+
+.sp-hide {
+  display: block;
+
+  @media #{$breakS} {
+    display: none;
+  }
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.tac {
+  text-align: center;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.lh14 {
+  line-height: 1.4;
+}
+
+.lh18 {
+  line-height: 1.8;
+
+  @media #{$breakS} {
+    line-height: $lineHeight;
+  }
+}
+
+.lh20 {
+  line-height: 2;
+
+  @media #{$breakS} {
+    line-height: $lineHeight;
+  }
+}

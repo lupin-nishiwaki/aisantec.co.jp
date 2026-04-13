@@ -1,0 +1,13 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+%m_form_txt-style {
+  @include placeholder($colorGray);
+  background: $colorLightGray;
+  padding: 8px 20px;
+
+  @media #{$breakS} {
+    padding: 5px 13px;
+  }
+}

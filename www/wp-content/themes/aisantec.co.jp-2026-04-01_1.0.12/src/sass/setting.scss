@@ -1,0 +1,27 @@
+// ----------------------------------------
+// 初期設定・リセット
+@use "sass:math";
+@use "core/setting" as *;
+@use "core/mixin" as *;
+@use "core/reset";
+@use "core/minimum_reset";
+@use "core/helper";
+
+// ----------------------------------------
+// モジュール
+@use "module/icon";
+@use "module/text";
+@use "module/box";
+@use "module/form";
+@use "module/button";
+@use "module/cms";
+@use "module/list";
+@use "module/table";
+@use "module/animation";
+
+// ----------------------------------------
+// ベンダー
+@use "vender/jquery-slick";
+@use "vender/jquery-slick-theme";
+@use "vender/jquery-venobox";
+// @use "vender/jquery-perfectscrollbar";

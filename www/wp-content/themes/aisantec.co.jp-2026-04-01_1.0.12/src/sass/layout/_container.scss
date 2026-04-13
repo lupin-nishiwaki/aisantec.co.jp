@@ -1,0 +1,396 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+#l_container {
+  position: relative;
+  z-index: 10;
+  padding-top: 117px;
+
+  @media #{$breakS} {
+    padding-top: 55px;
+  }
+
+  section {
+    &+section {
+      padding-top: 100px;
+
+      @media #{$breakS} {
+        padding-top: 50px;
+      }
+
+      &:last-child {
+        padding: 100px 0;
+
+        @media #{$breakS} {
+          padding: 50px 0;
+        }
+      }
+
+      &#page-title {
+        padding-top: 75px;
+
+        @media #{$breakS} {
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+
+  #path {
+    padding-top: 20px;
+    font-size: 1.2rem;
+
+    @media #{$breakS} {
+      font-size: 1rem;
+    }
+
+    ul {
+      li {
+        display: inline;
+
+        a {
+          text-decoration: underline;
+
+          &:after {
+            @include icoInline;
+            top: 1px;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background: url("#{$imgPath}i_arr_bk.svg") no-repeat center;
+            background-size: 14px auto;
+
+            @media #{$breakS} {
+              top: 1px;
+              margin: 0 5px;
+            }
+          }
+
+          &.nolink {
+            text-decoration: none;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #page-title {
+    .parent {
+      font-size: 1.8rem;
+      color: $colorDarkGray;
+      margin-bottom: 10px;
+      padding-left: 1px;
+
+      @media #{$breakS} {
+        font-size: 1.2rem;
+        padding-left: 0;
+      }
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      font-weight: $fontBold;
+
+      @media #{$breakS} {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  #column2 {
+    padding: 75px 0;
+
+    @media #{$breakS} {
+      padding: 50px 0 0;
+    }
+
+    .wrapper {
+      display: flex;
+
+      @media #{$breakM} {
+        display: block;
+        padding: 0;
+      }
+
+      .column_main {
+        width: 830px;
+
+        @media #{$breakM} {
+          width: 100%;
+          padding: 0 20px;
+        }
+
+        section {
+          &+section {
+            padding-top: 70px;
+
+            @media #{$breakM} {
+              padding-top: 50px;
+            }
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      .column_sub {
+        width: 280px;
+        padding-top: 10px;
+        margin-left: auto;
+
+        @media #{$breakM} {
+          width: 100%;
+          margin-top: 80px;
+          padding: 20px;
+          background: $colorLightBlue;
+        }
+
+        section {
+          &+section {
+            padding-top: 30px;
+
+            @media #{$breakM} {
+              padding-top: 20px;
+            }
+          }
+        }
+
+        #lonav {
+          h3 {
+            padding-bottom: 30px;
+
+            @media #{$breakM} {
+              font-size: 1.6rem;
+              padding-bottom: 20px;
+            }
+
+            a {
+              color: $colorMain;
+              display: inline-block;
+
+              &:before {
+                @include icoInline;
+                top: 1px;
+                width: 18px;
+                height: 18px;
+                margin-right: 7px;
+                background: url("#{$imgPath}i_arr02.svg") no-repeat center;
+                background-size: 18px !important;
+
+                @media #{$breakM} {
+                  top: 3px;
+                }
+              }
+            }
+          }
+
+          dl {
+            &:last-child {
+              border-bottom: 1px solid $colorGray;
+            }
+
+            &.cur {
+              dd {
+                display: block;
+              }
+            }
+
+            dt {
+              position: relative;
+              border-top: 1px solid $colorGray;
+              cursor: pointer;
+              padding: 17px 0 17px 17px;
+              line-height: 1.6;
+
+              @media #{$breakM} {
+                border-top: 1px solid $colorGray;
+              }
+
+              &:after {
+                @include icoPosition;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 51px;
+                height: 51px;
+                background: url("#{$imgPath}i_open_bk.svg") no-repeat center;
+                background-size: 18px auto !important;
+                transition: background 0.3s;
+
+                @media #{$breakM} {
+                  width: 47px;
+                  height: 47px;
+                }
+              }
+
+              &.is-accordion:after {
+                background: url("#{$imgPath}i_close_bk.svg") no-repeat center;
+              }
+            }
+
+            dd {
+              display: none;
+              font-size: 1.2rem;
+              padding-bottom: 20px;
+
+              ul {
+                li {
+                  &+li {
+                    margin-top: 3px;
+                  }
+
+                  &.cur {
+                    a {
+                      background: $colorMain;
+                      color: $colorWhite;
+
+                      &:after {
+                        background: url("#{$imgPath}i_arr_wh.svg") no-repeat center;
+                      }
+                    }
+                  }
+
+                  a {
+                    position: relative;
+                    display: block;
+                    background: $colorLightBlue;
+                    padding: 6px 18px;
+                    border-radius: 4px;
+
+                    @media #{$breakM} {
+                      background: $colorWhite;
+                    }
+
+                    &:after {
+                      @include icoPosition;
+                      top: 0;
+                      bottom: 0;
+                      right: 0;
+                      width: 40px;
+                      height: 36px;
+                      background: url("#{$imgPath}i_arr_bk.svg") no-repeat center;
+                      background-size: 14px !important;
+                    }
+
+                    &[target="_blank"]::before {
+                      content: "";
+                      display: inline-block;
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      margin: auto 0;
+                      left: 75px;
+                      width: 15px;
+                      height: 15px;
+                      margin-left: 2px;
+                      background: url("#{$imgPath}i_blank_bk.svg") no-repeat center !important;
+                      background-size: 15px auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          p {
+            &.cur {
+              background-color: $colorLightBlue;
+            }
+
+            &:last-child {
+              border-bottom: 1px solid $colorGray;
+            }
+
+            a {
+              display: block;
+              position: relative;
+              border-top: 1px solid $colorGray;
+              cursor: pointer;
+              padding: 17px 0 17px 17px;
+              line-height: 1.6;
+
+              @media #{$breakM} {
+                border-top: 1px solid $colorGray;
+              }
+
+              &:after {
+                @include icoPosition;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 51px;
+                height: 51px;
+                background: url("#{$imgPath}i_arr_bk.svg") no-repeat center;
+                background-size: 18px auto !important;
+                transition: background 0.3s;
+
+                @media #{$breakM} {
+                  width: 47px;
+                  height: 47px;
+                }
+              }
+            }
+          }
+        }
+
+        #bnr {
+          @media #{$breakM} {
+            padding-bottom: 0;
+          }
+
+          @media #{$breakS} {
+            padding-bottom: 50px;
+          }
+
+          .ir-mail {
+            background: $colorMain;
+            padding: 20px;
+
+            h3 {
+              font-size: 1.6rem;
+              color: $colorWhite;
+              font-weight: $fontBold;
+            }
+
+            .txt {
+              line-height: 1.6;
+              font-size: 1.4rem;
+              margin: 5px 0 13px;
+              color: $colorWhite;
+
+              @media #{$breakM} {
+                margin: 0 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #page_company {
+    #lonav {
+      ul {
+        .cur {
+          background-color: $colorLightBlue;
+        }
+
+        p {
+          a {
+            padding: 17px 0 17px 17px !important;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

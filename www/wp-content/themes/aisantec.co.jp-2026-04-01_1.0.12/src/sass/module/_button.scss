@@ -1,0 +1,52 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+.m_btn_main {
+  a {
+    display: block;
+    background: $colorMain;
+    color: $colorWhite;
+    text-align: center;
+    font-weight: $fontBold;
+    border-radius: 6px;
+    padding: 10px;
+
+    @media #{$breakS} {
+      padding: 10px 10px 12px;
+    }
+
+    &:before {
+      @include icoInline;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      background: url("#{$imgPath}i_arr02_wh.svg") no-repeat center;
+      background-size: 18px !important;
+    }
+  }
+
+  &.wh {
+    a {
+      background: none;
+      border: 2px solid $colorMain;
+      color: $colorMain;
+
+      &:before {
+        background: url("#{$imgPath}i_arr02.svg") no-repeat center;
+      }
+    }
+  }
+
+  &.wh2 {
+    a {
+      background: $colorWhite;
+      color: $colorMain;
+
+      &:before {
+        background: url("#{$imgPath}i_arr02.svg") no-repeat center;
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+@use "sass:math";
+@use "setting" as *;
+@use "mixin" as *;
+
+html {
+  font-size: 10px;
+
+  // @include fontSize(10,1180);
+  @media #{$breakS} {
+    // @include fontSize(10,375);
+  }
+}
+
+body {
+  @include fontFamily("gothic");
+  font-size: 1.5rem;
+  font-weight: $fontRegular;
+  line-height: $lineHeight;
+  color: $colorBlack;
+  background: $colorWhite;
+  letter-spacing: $letterSpacing;
+  -webkit-text-size-adjust: 100%;
+  min-width: $width;
+
+  @media #{$breakM} {
+    min-width: 900px;
+  }
+
+  @media #{$breakS} {
+    min-width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+
+  * {
+    outline: none;
+    box-sizing: border-box;
+    font-feature-settings: "palt" 1;
+
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fontRegular;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+img {
+  pointer-events: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  image-rendering: -webkit-optimize-contrast;
+
+  @media #{$breakS} {
+    max-width: auto;
+    width: 100%;
+    image-rendering: auto;
+  }
+
+  @media #{$retina} {
+    image-rendering: auto;
+  }
+}
+
+picture {
+  display: block;
+}
+
+a {
+  @include hoverOpacity();
+  font-weight: $fontRegular;
+  color: $colorBlack;
+  text-decoration: none;
+
+  &[href^="tel:"] {
+    cursor: default;
+    pointer-events: none;
+
+    @media #{$breakS} {
+      pointer-events: auto;
+    }
+  }
+}
+
+em,
+strong {
+  font-weight: $fontBold;
+  font-style: normal;
+}
+
+dl {
+  dt {
+    font-weight: $fontRegular;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+figure {
+  line-height: 0;
+
+  figcaption {
+    line-height: $lineHeight;
+
+    @media #{$breakS} {
+      line-height: 1.8;
+    }
+  }
+}
+
+table {
+  width: 100%;
+
+  th {
+    text-align: left;
+  }
+}
+
+iframe {
+  border: none;    width: 100%;
+}
+
+// input[type="text"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="url"],
+// input[type="email"],
+// input[type="password"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="date"],
+// input[type="month"],
+// input[type="week"],
+// input[type="time"],
+// input[type="number"],
+// input[type="file"],
+input,
+textarea,
+select,
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  @include fontFamily("gothic");
+  font-size: 1.5rem;
+  font-weight: $fontRegular;
+  line-height: $lineHeight;
+  color: $colorBlack;
+  background: $colorWhite;
+  letter-spacing: $letterSpacing;
+  -webkit-text-size-adjust: 100%;
+
+  @media #{$breakS} {
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+}
+
+textarea {
+  resize: vertical;
+  vertical-align: bottom;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  @include hoverOpacity();
+  cursor: pointer;
+}

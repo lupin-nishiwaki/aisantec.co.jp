@@ -1,0 +1,24 @@
+// ----------------------------------------
+// 初期設定・リセット
+@use "sass:math";
+@use "core/setting" as *;
+@use "core/mixin" as *;
+
+// ----------------------------------------
+// レイアウト
+@use "layout/animation";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/container";
+
+// ----------------------------------------
+// [WP]管理バー（PCの場合は32px、SPの場合は46px）
+body.customize-support {
+  #l_header {
+    top: 32px;
+
+    @media #{$breakS} {
+      top: 46px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// ----------------------------------------
+// 初期設定・リセット
+@use "sass:math";
+@use "core/setting" as *;
+@use "core/mixin" as *;
+
+// ----------------------------------------
+// 個別
+@use "unique/company";
+@use "unique/ir";
+@use "unique/top";

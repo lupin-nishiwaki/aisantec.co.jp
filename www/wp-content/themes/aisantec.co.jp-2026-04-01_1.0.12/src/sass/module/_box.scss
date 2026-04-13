@@ -1,0 +1,82 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+.m_box_fixed {
+  position: relative;
+  width: $width;
+  margin: 0 auto;
+
+  @media #{$breakM} {
+    width: 90%;
+  }
+
+  @media #{$breakS} {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.m_box_table {
+  .inner {
+    @media #{$breakS} {
+      overflow-x: scroll;
+    }
+
+    table {
+      @media #{$breakS} {
+        width: 700px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .scroll {
+    display: none;
+    margin-top: 10px;
+    font-weight: $fontBold;
+    text-align: right;
+
+    @media #{$breakS} {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+}
+
+.m_box_graph {
+  .inner {
+    position: relative;
+    overflow-y: hidden;
+
+    @media #{$breakS} {
+      overflow-x: scroll;
+    }
+
+    .graph {
+      transform: translateY(-30px);
+      width: 100%;
+      height: 400px;
+
+      @media #{$breakS} {
+        transform: translateY(-20px);
+        width: 600px;
+        //height: 280px;
+        height: 100%;
+      }
+    }
+  }
+
+  .scroll {
+    display: none;
+    margin-top: 10px;
+    font-weight: $fontBold;
+    text-align: right;
+
+    @media #{$breakS} {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+}

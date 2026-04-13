@@ -1,0 +1,46 @@
+@use "sass:math";
+
+// ----------------------------------------
+// variable
+$colorMain: #005bac;
+$colorSub: #dae24a;
+$colorWhite: #fff;
+$colorBlack: #333;
+$colorLightBlack: #404040;
+$colorDarkGray: #707070;
+$colorGray: #dddddd;
+$colorLightGray: #ebebeb;
+$colorDarkBlue: #023458;
+$colorBlue: #4d8dc5;
+$colorLightBlue: #edf6fe;
+$colorDarkRed: #ac1932;
+$colorRed: #c9364f;
+
+$radius: 3px;
+$shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+$opacity: 0.6;
+
+$fontRegular: 400;
+$fontBold: 700;
+$fontRegularEn: 400;
+$fontBoldEn: 700;
+
+$width: 1200px;
+$lineHeight: 2;
+$letterSpacing: 0.15em;
+$letterSpacingEn: 0.45em;
+
+$imgPath: "/wp-content/themes/aisantec.co.jp/asset/img/";
+// 例）background: url('#{$imgPath}bg.png')
+
+// ----------------------------------------
+// break point
+$breakS: "screen and (max-width: 767px)"; // sp
+// $breakM: "screen and (max-width: 1024px)";  // tablet
+$breakM: "screen and (max-width: 1200px)"; // tablet
+$breakL: "screen and (max-width: 1400px)"; // ~1400px PC
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 1.5)";
+
+// ----------------------------------------
+// hack
+$ie: "all and (-ms-high-contrast:none)";

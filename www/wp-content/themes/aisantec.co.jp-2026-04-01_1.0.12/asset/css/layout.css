@@ -1,0 +1,1694 @@
+@keyframes sk-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+#l_animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#l_animation .load {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+#l_animation .load.is-load {
+  opacity: 0;
+}
+#l_animation .load .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+}
+#l_animation .load .logo img {
+  width: 250px;
+}
+@media screen and (max-width: 767px) {
+  #l_animation .load .logo img {
+    width: 200px;
+  }
+}
+#l_animation .load .item {
+  width: 20%;
+  background: #005bac;
+  transform: scaleY(1);
+  transform-origin: bottom left;
+}
+@media screen and (max-width: 767px) {
+  #l_animation .load .item {
+    width: 14.3%;
+  }
+}
+#l_animation .load .item:nth-child(n+6) {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #l_animation .load .item:nth-child(n+6) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html.is-fixed,
+  html.is-fixed body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+#l_header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  min-width: 1200px;
+  background: #fff;
+  border-top: 5px solid #005bac;
+  border-bottom: 1px solid #dddddd;
+}
+@media screen and (max-width: 1200px) {
+  #l_header {
+    min-width: auto;
+    border-top: 3px solid #005bac;
+  }
+}
+#l_header .logo {
+  padding: 30px 0 0 30px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .logo {
+    padding: 10px;
+  }
+}
+#l_header .logo a {
+  display: inline-block;
+}
+#l_header .logo a img {
+  width: 210px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .logo a img {
+    width: 120px;
+  }
+}
+#l_header .nav {
+  position: relative;
+  z-index: 100;
+  margin-left: auto;
+  padding: 20px 20px 0 0;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    z-index: 100;
+    width: 85%;
+    height: calc(100vh - 56px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 0 120px;
+    background: #fff;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav.is-drawr {
+    transform: translateX(0);
+  }
+}
+#l_header .nav .snav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav {
+    display: block;
+    font-size: 1.2rem;
+  }
+}
+#l_header .nav .snav .text-size {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav .text-size {
+    margin-right: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+#l_header .nav .snav .text-size dt {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #707070;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav .text-size dt {
+    font-size: 1rem;
+  }
+}
+#l_header .nav .snav .text-size dd span {
+  display: inline-block;
+  margin-left: 3px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav .text-size dd span {
+    margin-left: 8px;
+  }
+}
+#l_header .nav .snav .text-size dd span.is-size {
+  font-weight: 700;
+  text-decoration: none;
+  cursor: auto;
+}
+#l_header .nav .snav ul {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav ul li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav ul li.contact a {
+    display: block;
+    padding: 8px 15px;
+  }
+}
+#l_header .nav .snav ul li.contact a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_mail_bk.svg") no-repeat center;
+  background-size: 17px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav ul li.contact a:before {
+    top: 4px;
+  }
+}
+#l_header .nav .snav ul li.language {
+  margin: 0 20px 0 15px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav ul li.language {
+    margin: 0;
+    border-left: 1px solid #dddddd;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav ul li.language a {
+    display: block;
+    padding: 8px 15px;
+  }
+}
+#l_header .nav .snav ul li.language a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_language_bk.svg") no-repeat center;
+  background-size: 17px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav ul li.language a:before {
+    top: 4px;
+  }
+}
+#l_header .nav .snav form {
+  display: block;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav form {
+    border-radius: 0;
+    margin: -2px;
+  }
+}
+#l_header .nav .snav form input[type=text] {
+  background: #ebebeb;
+  font-size: 1.4rem;
+  padding: 3px 45px 3px 10px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav form input[type=text] {
+    font-size: 1.2rem;
+    padding: 10px 57px 10px 15px;
+  }
+}
+#l_header .nav .snav form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_search_wh.svg") #005bac no-repeat center;
+  background-size: 20px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .snav form input[type=submit] {
+    top: 2px;
+    width: 46px;
+    height: 41px;
+  }
+}
+#l_header .nav .gnav {
+  display: flex;
+  line-height: 1;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav {
+    display: block;
+    margin-top: 0;
+  }
+}
+#l_header .nav .gnav i {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border-left: 1px solid #dddddd;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg") no-repeat center;
+  background-size: 18px auto !important;
+  transition: background 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav i {
+    display: block;
+  }
+}
+#l_header .nav .gnav i.is-accordion {
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg") no-repeat center;
+}
+#l_header .nav .gnav > li:last-child > a {
+  border-right: 1px solid #dddddd;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li:last-child > a {
+    border-right: none;
+  }
+}
+#l_header .nav .gnav > li > a {
+  padding: 0 25px;
+  border-left: 1px solid #dddddd;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li > a {
+    display: block;
+    padding: 13px 15px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li a {
+    text-decoration: underline;
+  }
+}
+#l_header .nav .gnav > li .mega-menu.is-menu > dt:before {
+  opacity: 1;
+}
+#l_header .nav .gnav > li .mega-menu.is-menu > dd {
+  opacity: 1;
+  visibility: visible;
+}
+#l_header .nav .gnav > li .mega-menu > dt {
+  position: relative;
+  padding-bottom: 22px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dt {
+    padding: 0;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dt:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #005bac;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dt:before {
+    display: none;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dt > a {
+  padding: 0 25px;
+  border-left: 1px solid #dddddd;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dt > a {
+    padding: 15px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  position: fixed;
+  top: 117px;
+  right: 0;
+  width: 1200px;
+  height: 100%;
+  background-size: auto 100%;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    width: 100%;
+    line-height: 1.4;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap {
+  position: relative;
+  background: #005bac;
+  height: calc(100vh - 117px);
+  width: 100%;
+  padding: 80px;
+  overflow-y: scroll;
+  float: right;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap {
+    height: 100%;
+    padding: 0;
+    float: none;
+    background: #404040;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap * {
+  color: #fff;
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .heading {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #4d8dc5;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .heading {
+    display: none;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .heading h3 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-right: 40px;
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .heading .top a {
+  color: #fff;
+  font-size: 2rem;
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .heading .top a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg") no-repeat center;
+  background-size: 18px !important;
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -50px 0 0 -50px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec {
+    display: block;
+    margin: 0;
+    background: #333;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li {
+  padding: 50px 0 0 50px;
+  width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li {
+    line-height: 1.6;
+    width: auto;
+    padding: 0;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li a {
+  position: relative;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li a {
+    display: block;
+    padding: 8px 15px 9px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    border-bottom: 1px solid #707070;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg") no-repeat center;
+  background-size: 18px !important;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li a:before {
+    display: none;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li a[target=_blank]:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  margin-left: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg") no-repeat center;
+  background-size: 18px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap ul.sec > li a[target=_blank]:after {
+    top: 1px;
+    margin-left: 3px;
+    width: 9px;
+    height: 9px;
+    background-size: 9px auto;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -50px 0 0 -50px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row {
+    display: block;
+    margin: 0;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row > div {
+  width: 33.3%;
+  padding: 50px 0 0 50px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row > div {
+    width: 100%;
+    padding: 0;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row > div.w50 {
+  width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row > div.w50 {
+    width: 100%;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec + .sec {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec + .sec {
+    margin-top: 0;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    border-top: 1px solid #707070;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt + dt {
+  margin-top: 30px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt + dt {
+    margin-top: 0;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt span {
+  position: relative;
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt span {
+    display: block;
+    padding: 9px 15px;
+    background: #333;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt a {
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt a {
+    display: block;
+    padding: 9px 15px;
+    background: #333;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg") no-repeat center;
+  background-size: 18px !important;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt a:before {
+    display: none;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt a[target=_blank]:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  margin-left: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg") no-repeat center;
+  background-size: 18px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt a[target=_blank]:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 34px;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt i {
+  width: 44px;
+  height: 34px;
+  border-left: 1px solid #707070;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_open_wh.svg") no-repeat center;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt i {
+    display: block;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dt i.is-accordion {
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_close_wh.svg") no-repeat center;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 15px 15px;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li {
+    margin: 0 15px 0 0;
+    font-size: 1rem;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a {
+  display: inline-block;
+  position: relative;
+  padding-left: 17px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a {
+    padding: 3px 0;
+    color: #dddddd;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a[target=_blank]:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  margin-left: 3px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg") no-repeat center;
+  background-size: 18px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a[target=_blank]:after {
+    width: 9px;
+    height: 9px;
+    background-size: 9px auto;
+  }
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a + a {
+  margin-top: 16px;
+}
+#l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav > li .mega-menu > dd .wrap .row dl.sec dd ul li a:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav .recruit a {
+    padding: 12px 15px 15px;
+  }
+}
+#l_header .nav .gnav .recruit a:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  margin-left: 3px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_blank_bk.svg") no-repeat center;
+  background-size: 18px auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .nav .gnav .recruit a:after {
+    top: 2px;
+  }
+}
+#l_header .drawr_btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 51px;
+  height: 51px;
+  border-left: 1px solid #dddddd;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .drawr_btn {
+    display: block;
+  }
+}
+#l_header .drawr_btn span {
+  position: absolute;
+  left: 13px;
+  width: 23px;
+  height: 1px;
+  background: #333;
+  transition: opacity 0.3s, top 0.3s, transform 0.3s;
+}
+#l_header .drawr_btn span:nth-of-type(1) {
+  top: 22px;
+}
+#l_header .drawr_btn span:nth-of-type(2) {
+  top: 28px;
+}
+#l_header .drawr_btn.is-drawr span:nth-of-type(1) {
+  top: 25px;
+  transform: rotate(45deg);
+}
+#l_header .drawr_btn.is-drawr span:nth-of-type(2) {
+  top: 25px;
+  transform: rotate(-45deg);
+}
+#l_header .drawr_cover {
+  position: fixed;
+  top: 117px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.5s, opacity 0.3s, visibility 0.3s;
+  background: #005bac;
+  visibility: hidden;
+  opacity: 0;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .drawr_cover {
+    top: 55px;
+    opacity: 0.5;
+    display: block;
+    transform: translateX(100%);
+  }
+}
+#l_header .drawr_cover.is-drawr {
+  visibility: visible;
+  opacity: 0.5;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .drawr_cover.is-drawr {
+    transform: translateX(0);
+  }
+}
+#l_header .bnr_fixed {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  width: 310px;
+  background: #005bac;
+  transition: transform 0.5s;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed {
+    padding: 10px 20px;
+    width: calc(100% - 20px);
+  }
+}
+#l_header .bnr_fixed.is-bnr {
+  transform: translateX(100%);
+}
+#l_header .bnr_fixed.is-bnr .disp .open {
+  display: block;
+}
+#l_header .bnr_fixed.is-bnr .disp .close {
+  display: none;
+}
+#l_header .bnr_fixed h3,
+#l_header .bnr_fixed .txt {
+  color: #fff;
+}
+#l_header .bnr_fixed h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed h3 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+}
+#l_header .bnr_fixed .txt {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 5px 0 10px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed .txt {
+    margin: 5px 0;
+  }
+}
+#l_header .bnr_fixed .disp {
+  position: absolute;
+  top: 0;
+  left: -21px;
+  height: 100%;
+  background: #023458;
+  writing-mode: vertical-rl;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed .disp {
+    left: -20px;
+    line-height: 1;
+    width: 20px;
+  }
+}
+#l_header .bnr_fixed .disp .close:before,
+#l_header .bnr_fixed .disp .open:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-bottom: 7px;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed .disp .close:before,
+  #l_header .bnr_fixed .disp .open:before {
+    right: 2px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed .disp .close {
+    line-height: 1.6;
+  }
+}
+#l_header .bnr_fixed .disp .close:before {
+  border-width: 4px 0 4px 7px;
+  border-color: transparent transparent transparent #fff;
+}
+#l_header .bnr_fixed .disp .open {
+  display: none;
+}
+#l_header .bnr_fixed .disp .open:before {
+  right: 1px;
+  border-width: 5px 7px 5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+@media screen and (max-width: 1200px) {
+  #l_header .bnr_fixed .disp .open:before {
+    right: 4px;
+  }
+}
+
+#l_footer {
+  position: relative;
+  z-index: 10;
+}
+#l_footer #contact {
+  background: #707070;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .wrap {
+    padding: 0;
+  }
+}
+#l_footer #contact .row {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row {
+    display: block;
+  }
+}
+#l_footer #contact .row > div {
+  width: 50%;
+  padding: 50px 0;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row > div {
+    width: 100%;
+    padding: 20px 25px;
+  }
+}
+#l_footer #contact .row > div + div {
+  border-left: 1px solid #404040;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row > div + div {
+    border: none;
+    border-top: 1px solid #404040;
+    padding: 20px 25px 25px;
+  }
+}
+#l_footer #contact .row h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row h3 {
+    font-size: 1.4rem;
+  }
+}
+#l_footer #contact .row .no {
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row .no {
+    margin-top: 5px;
+  }
+}
+#l_footer #contact .row .no a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 5.3rem;
+  line-height: 1.4;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row .no a {
+    font-size: 3.6rem;
+    line-height: 1.2;
+  }
+}
+#l_footer #contact .row .no a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_tel_wh.svg") no-repeat center;
+  background-size: 18px auto;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row .no a:before {
+    top: 2px;
+    width: 28px;
+    height: 28px;
+    background-size: 14px auto;
+  }
+}
+#l_footer #contact .row .btn {
+  margin-top: 35px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row .btn {
+    margin-top: 15px;
+  }
+}
+#l_footer #contact .row .btn a {
+  display: inline-block;
+  width: 330px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  padding: 13px 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #contact .row .btn a {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+}
+#l_footer #sitemap {
+  background: #404040;
+  padding: 50px 0 40px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .wrap {
+    padding: 0;
+  }
+}
+#l_footer #sitemap * {
+  color: #fff;
+}
+#l_footer #sitemap a {
+  text-decoration: underline;
+}
+#l_footer #sitemap a[target=_blank]:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  margin-left: 2px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg") no-repeat center;
+  background-size: 9px auto;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap a[target=_blank]:after {
+    top: 1px;
+  }
+}
+#l_footer #sitemap i {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 39px;
+  border-left: 1px solid #707070;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_open_wh.svg") no-repeat center;
+  background-size: 18px auto !important;
+  transition: background 0.3s;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap i {
+    display: block;
+  }
+}
+#l_footer #sitemap i.is-accordion {
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_close_wh.svg") no-repeat center;
+}
+#l_footer #sitemap .row {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row {
+    display: block;
+  }
+}
+#l_footer #sitemap .row > div.main {
+  width: 920px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div.main {
+    width: 100%;
+  }
+}
+#l_footer #sitemap .row > div.sub {
+  width: 200px;
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div.sub {
+    width: 100%;
+  }
+}
+#l_footer #sitemap .row > div > dl {
+  display: flex;
+  margin-bottom: 11px;
+  padding-bottom: 13px;
+  border-bottom: 1px dotted #707070;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl {
+    border-bottom: 1px solid #707070;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+#l_footer #sitemap .row > div > dl.recruit dt a {
+  position: relative;
+}
+#l_footer #sitemap .row > div > dl > dt {
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+  padding-top: 3px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dt {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dt a {
+    display: block;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dt a[target=_blank]:after {
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    background-size: 14px auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd {
+    display: none;
+    background: #333;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd .sec {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd .sec {
+    display: block;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd .sec + .sec {
+  margin-top: 8px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd .sec + .sec {
+    margin-top: 1px;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd .sec dt {
+  position: relative;
+  flex-shrink: 0;
+  width: 180px;
+  padding-top: 3px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd .sec dt {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd .sec dt a,
+  #l_footer #sitemap .row > div > dl > dd .sec dt span {
+    display: block;
+    padding: 7px 15px;
+    background: #282828;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd .sec dt i {
+  height: 33px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd .sec dd {
+    display: none;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd ul {
+    display: block;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd ul li {
+  margin-top: 3px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd ul li {
+    margin: 1px 0 0;
+    font-size: 1.2rem;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd ul li:last-child:after {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd ul li.w100 {
+    width: 100%;
+  }
+}
+#l_footer #sitemap .row > div > dl > dd ul li a {
+  display: inline-block;
+  position: relative;
+  color: #aaa;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #sitemap .row > div > dl > dd ul li a {
+    display: block;
+    padding: 7px 15px;
+    color: #fff;
+    background: #282828;
+  }
+}
+#l_footer #footer {
+  background: #404040;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer {
+    padding: 40px 0;
+  }
+}
+#l_footer #footer * {
+  color: #fff;
+}
+#l_footer #footer .row {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer .row {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer .row .logo {
+    text-align: center;
+  }
+}
+#l_footer #footer .row .logo a {
+  display: inline-block;
+}
+#l_footer #footer .row .logo a img {
+  width: 180px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer .row .logo a img {
+    width: 150px;
+  }
+}
+#l_footer #footer .row ul {
+  display: flex;
+  font-size: 1.4rem;
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer .row ul {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+}
+#l_footer #footer .row ul li + li {
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer .row ul li + li {
+    margin: 5px 0 0 0;
+  }
+}
+#l_footer #footer .row .copy {
+  margin-left: auto;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  #l_footer #footer .row .copy {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+#l_container {
+  position: relative;
+  z-index: 10;
+  padding-top: 117px;
+}
+@media screen and (max-width: 767px) {
+  #l_container {
+    padding-top: 55px;
+  }
+}
+#l_container section + section {
+  padding-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  #l_container section + section {
+    padding-top: 50px;
+  }
+}
+#l_container section + section:last-child {
+  padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+  #l_container section + section:last-child {
+    padding: 50px 0;
+  }
+}
+#l_container section + section#page-title {
+  padding-top: 75px;
+}
+@media screen and (max-width: 767px) {
+  #l_container section + section#page-title {
+    padding-top: 50px;
+  }
+}
+#l_container #path {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  #l_container #path {
+    font-size: 1rem;
+  }
+}
+#l_container #path ul li {
+  display: inline;
+}
+#l_container #path ul li a {
+  text-decoration: underline;
+}
+#l_container #path ul li a:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg") no-repeat center;
+  background-size: 14px auto;
+}
+@media screen and (max-width: 767px) {
+  #l_container #path ul li a:after {
+    top: 1px;
+    margin: 0 5px;
+  }
+}
+#l_container #path ul li a.nolink {
+  text-decoration: none;
+}
+#l_container #path ul li a.nolink:hover {
+  opacity: 1;
+}
+#l_container #page-title .parent {
+  font-size: 1.8rem;
+  color: #707070;
+  margin-bottom: 10px;
+  padding-left: 1px;
+}
+@media screen and (max-width: 767px) {
+  #l_container #page-title .parent {
+    font-size: 1.2rem;
+    padding-left: 0;
+  }
+}
+#l_container #page-title h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  #l_container #page-title h1 {
+    font-size: 2.4rem;
+  }
+}
+#l_container #column2 {
+  padding: 75px 0;
+}
+@media screen and (max-width: 767px) {
+  #l_container #column2 {
+    padding: 50px 0 0;
+  }
+}
+#l_container #column2 .wrapper {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper {
+    display: block;
+    padding: 0;
+  }
+}
+#l_container #column2 .wrapper .column_main {
+  width: 830px;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_main {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+#l_container #column2 .wrapper .column_main section + section {
+  padding-top: 70px;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_main section + section {
+    padding-top: 50px;
+  }
+}
+#l_container #column2 .wrapper .column_main section:last-child {
+  padding-bottom: 0;
+}
+#l_container #column2 .wrapper .column_sub {
+  width: 280px;
+  padding-top: 10px;
+  margin-left: auto;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub {
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px;
+    background: #edf6fe;
+  }
+}
+#l_container #column2 .wrapper .column_sub section + section {
+  padding-top: 30px;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub section + section {
+    padding-top: 20px;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav h3 {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav h3 {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav h3 a {
+  color: #005bac;
+  display: inline-block;
+}
+#l_container #column2 .wrapper .column_sub #lonav h3 a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr02.svg") no-repeat center;
+  background-size: 18px !important;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav h3 a:before {
+    top: 3px;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav dl:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl.cur dd {
+  display: block;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dt {
+  position: relative;
+  border-top: 1px solid #dddddd;
+  cursor: pointer;
+  padding: 17px 0 17px 17px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav dl dt {
+    border-top: 1px solid #dddddd;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dt:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 51px;
+  height: 51px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg") no-repeat center;
+  background-size: 18px auto !important;
+  transition: background 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav dl dt:after {
+    width: 47px;
+    height: 47px;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dt.is-accordion:after {
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg") no-repeat center;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd {
+  display: none;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li + li {
+  margin-top: 3px;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li.cur a {
+  background: #005bac;
+  color: #fff;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li.cur a:after {
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr_wh.svg") no-repeat center;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a {
+  position: relative;
+  display: block;
+  background: #edf6fe;
+  padding: 6px 18px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav dl dd ul li a {
+    background: #fff;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 36px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg") no-repeat center;
+  background-size: 14px !important;
+}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a[target=_blank]::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 75px;
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_blank_bk.svg") no-repeat center !important;
+  background-size: 15px auto;
+}
+#l_container #column2 .wrapper .column_sub #lonav p.cur {
+  background-color: #edf6fe;
+}
+#l_container #column2 .wrapper .column_sub #lonav p:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+#l_container #column2 .wrapper .column_sub #lonav p a {
+  display: block;
+  position: relative;
+  border-top: 1px solid #dddddd;
+  cursor: pointer;
+  padding: 17px 0 17px 17px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav p a {
+    border-top: 1px solid #dddddd;
+  }
+}
+#l_container #column2 .wrapper .column_sub #lonav p a:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 51px;
+  height: 51px;
+  background: url("/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg") no-repeat center;
+  background-size: 18px auto !important;
+  transition: background 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #lonav p a:after {
+    width: 47px;
+    height: 47px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #bnr {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #l_container #column2 .wrapper .column_sub #bnr {
+    padding-bottom: 50px;
+  }
+}
+#l_container #column2 .wrapper .column_sub #bnr .ir-mail {
+  background: #005bac;
+  padding: 20px;
+}
+#l_container #column2 .wrapper .column_sub #bnr .ir-mail h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+#l_container #column2 .wrapper .column_sub #bnr .ir-mail .txt {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  margin: 5px 0 13px;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  #l_container #column2 .wrapper .column_sub #bnr .ir-mail .txt {
+    margin: 0 0 10px;
+  }
+}
+#l_container #page_company #lonav ul .cur {
+  background-color: #edf6fe;
+}
+#l_container #page_company #lonav ul p a {
+  padding: 17px 0 17px 17px !important;
+  display: block;
+}
+
+body.customize-support #l_header {
+  top: 32px;
+}
+@media screen and (max-width: 767px) {
+  body.customize-support #l_header {
+    top: 46px;
+  }
+}/*# sourceMappingURL=layout.css.map */

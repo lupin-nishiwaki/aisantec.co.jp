@@ -1,0 +1,84 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+@keyframes sk-circleFadeDelay {
+
+  0%,
+  39%,
+  100% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+}
+
+#l_animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  .load {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+
+    &.is-load {
+      opacity: 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      opacity: 0;
+
+      img {
+        width: 250px;
+
+        @media #{$breakS} {
+          width: 200px;
+        }
+      }
+    }
+
+    .item {
+      width: 20%;
+      background: $colorMain;
+      transform: scaleY(1);
+      transform-origin: bottom left;
+
+      @media #{$breakS} {
+        width: 14.3%;
+      }
+
+      &:nth-child(n + 6) {
+        display: none;
+
+        @media #{$breakS} {
+          display: block;
+        }
+      }
+    }
+  }
+}

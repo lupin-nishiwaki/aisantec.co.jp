@@ -1,0 +1,208 @@
+@use "sass:math";
+@use "setting" as *;
+
+@mixin fontFamily($type, $important: false) {
+  @if $important =="important" or $important ==true {
+    $important: " !important";
+  }
+
+  @else {
+    $important: "";
+  }
+
+  @if $type ==gothic {
+    font-family: YakuHanJP, "Outfit", "Noto Sans JP", "Noto Sans JP", YuGothic, "Yu Gothic", "Meiryo", "メイリオ",
+    "MS PGothic", "ＭＳ Ｐゴシック", sans-serif#{$important};
+    // @media #{$breakS} { font-family: YakuHanJP, 'Noto Sans JP', YuGothic, 'Yu Gothic', 'Meiryo', 'メイリオ', 'MS PGothic', 'ＭＳ Ｐゴシック', sans-serif#{$important}; }
+  }
+
+  @else if $type ==en {
+    font-family: YakuHanJP, "Outfit", "Noto Sans JP";
+    // @media #{$breakS} { font-family: YakuHanJP, 'Noto Sans JP'; }
+  }
+
+  @else if $type ==serif {
+    font-family: YakuHanJP, "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",
+    "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif, sans-serif#{$important};
+    // @media #{$breakS} { font-family: '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif, sans-serif#{$important}; }
+  }
+}
+
+@function _get_vw($size, $viewport: 375) {
+  $rate: math.div(100, $viewport);
+  @return $rate * $size * 1vw;
+}
+
+@mixin fontSize($font_size: 16, $viewsize: 1080) {
+  font-size: $font_size * 1px;
+  font-size: _get_vw($font_size, $viewsize);
+}
+
+// 例）画面幅750pxの場合は、フォントサイズを14pxにする
+// @include fontSize(14,750);
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin inlineBlockChild() {
+  letter-spacing: -0.4em;
+
+  >* {
+    display: inline-block;
+    letter-spacing: $letterSpacing;
+  }
+}
+
+@mixin scrollBar($type, $size) {
+  @if $type ==x {
+    overflow-x: scroll;
+  }
+
+  @else if $type ==y {
+    overflow-y: scroll;
+  }
+
+  &::-webkit-scrollbar {
+    @if $type ==x {
+      height: $size;
+    }
+
+    @else if $type ==y {
+      width: $size;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: $colorGray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: $colorBlack;
+  }
+}
+
+@mixin boxRow($count, $top, $left, $sptop) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: (-$top) 0 0 (-$left);
+
+  @media #{$breakS} {
+    display: block;
+    margin: (-$sptop) 0 0 0;
+  }
+
+  >* {
+    width: math.div(100%, $count);
+    padding: $top 0 0 $left;
+
+    @media #{$breakS} {
+      width: 100%;
+      padding: $sptop 0 0 0;
+    }
+  }
+}
+
+@mixin boxCol($count, $top, $left, $sptop, $spleft) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: (-$top) 0 0 (-$left);
+
+  @media #{$breakS} {
+    margin: (-$sptop) 0 0 (-$spleft);
+  }
+
+  >* {
+    width: math.div(100%, $count);
+    padding: $top 0 0 $left;
+
+    @media #{$breakS} {
+      width: 50%;
+      padding: $sptop 0 0 $spleft;
+    }
+  }
+}
+
+@mixin placeholder($color) {
+  &:placeholder-shown {
+    color: $color;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin txtEn($weight: regular) {
+  @include fontFamily("en");
+  letter-spacing: $letterSpacingEn;
+
+  @if $weight =="bold" {
+    font-weight: $fontBoldEn;
+  }
+
+  @else {
+    font-weight: $fontRegularEn;
+  }
+}
+
+@mixin hoverOpacity() {
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: $opacity;
+  }
+}
+
+@mixin boxCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin icoInline() {
+  content: "";
+  display: inline-block;
+  position: relative;
+}
+
+@mixin icoPosition() {
+  content: "";
+  position: absolute;
+  margin: auto;
+}
+
+@mixin icoLabel() {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+  padding: 5px 10px 4px;
+  line-height: 1;
+  font-weight: $fontBold;
+
+  @media #{$breakS} {
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+}

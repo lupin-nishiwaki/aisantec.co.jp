@@ -1,0 +1,23 @@
+// ----------------------------------------
+// 初期設定・リセット
+@use "sass:math";
+@use "core/setting" as *;
+@use "core/mixin" as *;
+@use "core/reset";
+@use "core/minimum_reset";
+@use "core/helper";
+
+// * モジュール
+@use "module/cms";
+
+// * ----------------------------------------
+// *  style
+// * ----------------------------------------
+#tinymce {
+  @extend .m_cms_wysiwyg;
+  padding: 30px !important;
+
+  img {
+    pointer-events: auto;
+  }
+}
