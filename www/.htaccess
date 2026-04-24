@@ -1,42 +1,12 @@
-# --- start: page-specific basic auth ---
-<If "%{REQUEST_URI} == '/ir/management/business-model-limited-release-2025/'">
-    AuthType Basic
-    AuthName "Please enter your ID and password"
-    AuthUserFile /home/xb611602/aisan-corp.com/public_html/.htpasswd
-    AuthGroupFile /dev/null
-    Require valid-user
-</If>
-# --- end: page-specific basic auth ---
-
-#SITEGUARD_PLUGIN_SETTINGS_START
-#==== SITEGUARD_RENAME_LOGIN_SETTINGS_START
 <IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteBase /
-    RewriteRule ^wp-signup\.php 404-siteguard [L]
-    RewriteRule ^wp-activate\.php 404-siteguard [L]
-    RewriteRule ^master-login(.*)$ wp-login.php$1 [L]
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 </IfModule>
-#==== SITEGUARD_RENAME_LOGIN_SETTINGS_END
-#==== SITEGUARD_ADMIN_FILTER_SETTINGS_START
-<IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteBase /
-    RewriteRule ^404-siteguard - [L]
-    RewriteRule ^wp-admin/css - [L]
-    RewriteRule ^wp-admin/images - [L]
-    RewriteRule ^wp-admin/admin-ajax\.php - [L]
-    RewriteRule ^wp-admin/load-styles\.php - [L]
-    RewriteRule ^wp-admin/site-health\.php - [L]
-    RewriteCond %{REMOTE_ADDR} !^153\.231\.12\.182$
-    RewriteCond %{REMOTE_ADDR} !^183\.90\.235\.31$
-    RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
-    RewriteCond %{REMOTE_ADDR} !^::1$
-    RewriteRule ^wp-admin 404-siteguard [L]
-</IfModule>
-#==== SITEGUARD_ADMIN_FILTER_SETTINGS_END
-#SITEGUARD_PLUGIN_SETTINGS_END
-
 # BEGIN WordPress
 # "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
 # 動的に生成され、WordPress フィルターによってのみ修正が可能です。
