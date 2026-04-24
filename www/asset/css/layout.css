@@ -16,15 +16,15 @@
 #l_header .nav .snav .text-size dd span{display:inline-block;margin-left:3px;text-decoration:underline;cursor:pointer}
 #l_header .nav .snav .text-size dd span.is-size{font-weight:700;text-decoration:none;cursor:auto}
 #l_header .nav .snav ul{display:flex;align-items:center}
-#l_header .nav .snav ul li.contact a:before{content:'';display:inline-block;position:relative;top:3px;width:17px;height:17px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_mail_bk.svg) no-repeat center;background-size:17px auto}
+#l_header .nav .snav ul li.contact a:before{content:'';display:inline-block;position:relative;top:3px;width:17px;height:17px;margin-right:7px;background:url(/asset/img/i_mail_bk.svg) no-repeat center;background-size:17px auto}
 #l_header .nav .snav ul li.language{margin:0 20px 0 15px}
-#l_header .nav .snav ul li.language a:before{content:'';display:inline-block;position:relative;top:3px;width:17px;height:17px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_language_bk.svg) no-repeat center;background-size:17px auto}
+#l_header .nav .snav ul li.language a:before{content:'';display:inline-block;position:relative;top:3px;width:17px;height:17px;margin-right:7px;background:url(/asset/img/i_language_bk.svg) no-repeat center;background-size:17px auto}
 #l_header .nav .snav form{display:block;position:relative;border-radius:3px;overflow:hidden}
 #l_header .nav .snav form input[type=text]{background:#ebebeb;font-size:1.4rem;padding:3px 45px 3px 10px}
-#l_header .nav .snav form input[type=submit]{position:absolute;top:0;right:0;width:35px;height:35px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_search_wh.svg) #005bac no-repeat center;background-size:20px auto}
+#l_header .nav .snav form input[type=submit]{position:absolute;top:0;right:0;width:35px;height:35px;background:url(/asset/img/i_search_wh.svg) #005bac no-repeat center;background-size:20px auto}
 #l_header .nav .gnav{display:flex;line-height:1;margin-top:20px}
-#l_header .nav .gnav i{display:none;position:absolute;top:0;right:0;width:44px;height:44px;border-left:1px solid #ddd;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
-#l_header .nav .gnav i.is-accordion{background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg) no-repeat center}
+#l_header .nav .gnav i{display:none;position:absolute;top:0;right:0;width:44px;height:44px;border-left:1px solid #ddd;background:url(/asset/img/i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#l_header .nav .gnav i.is-accordion{background:url(/asset/img/i_close_bk.svg) no-repeat center}
 #l_header .nav .gnav>li:last-child>a{border-right:1px solid #ddd}
 #l_header .nav .gnav>li>a{padding:0 25px;border-left:1px solid #ddd}
 #l_header .nav .gnav>li .mega-menu.is-menu>dt:before{opacity:1}
@@ -38,12 +38,12 @@
 #l_header .nav .gnav>li .mega-menu>dd .wrap .heading{display:flex;align-items:center;border-bottom:1px solid #4d8dc5;padding-bottom:30px;margin-bottom:50px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .heading h3{font-size:3.8rem;font-weight:700;margin-right:40px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .heading .top a{color:#fff;font-size:2rem}
-#l_header .nav .gnav>li .mega-menu>dd .wrap .heading .top a:before{content:'';display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg) no-repeat center;background-size:18px!important}
+#l_header .nav .gnav>li .mega-menu>dd .wrap .heading .top a:before{content:'';display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-right:7px;background:url(/asset/img/i_arr02_wh.svg) no-repeat center;background-size:18px!important}
 #l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec{display:flex;flex-wrap:wrap;margin:-50px 0 0 -50px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec>li{padding:50px 0 0 50px;width:50%}
 #l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec>li a{position:relative;font-size:2rem}
-#l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec>li a:before{content:'';display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg) no-repeat center;background-size:18px!important}
-#l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec>li a[target=_blank]:after{content:'';display:inline-block;position:relative;top:0;width:14px;height:14px;margin-left:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg) no-repeat center;background-size:18px auto}
+#l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec>li a:before{content:'';display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-right:7px;background:url(/asset/img/i_arr02_wh.svg) no-repeat center;background-size:18px!important}
+#l_header .nav .gnav>li .mega-menu>dd .wrap ul.sec>li a[target=_blank]:after{content:'';display:inline-block;position:relative;top:0;width:14px;height:14px;margin-left:7px;background:url(/asset/img/i_blank_wh.svg) no-repeat center;background-size:18px auto}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row{display:flex;flex-wrap:wrap;margin:-50px 0 0 -50px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row>div{width:33.3%;padding:50px 0 0 50px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row>div.w50{width:50%}
@@ -52,16 +52,16 @@
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt+dt{margin-top:30px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt span{position:relative;font-weight:400}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt a{position:relative}
-#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt a:before{content:'';display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg) no-repeat center;background-size:18px!important}
-#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt a[target=_blank]:after{content:'';display:inline-block;position:relative;top:0;width:14px;height:14px;margin-left:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg) no-repeat center;background-size:18px auto}
-#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt i{width:44px;height:34px;border-left:1px solid #707070;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_wh.svg) no-repeat center}
-#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt i.is-accordion{background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_wh.svg) no-repeat center}
+#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt a:before{content:'';display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-right:7px;background:url(/asset/img/i_arr02_wh.svg) no-repeat center;background-size:18px!important}
+#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt a[target=_blank]:after{content:'';display:inline-block;position:relative;top:0;width:14px;height:14px;margin-left:7px;background:url(/asset/img/i_blank_wh.svg) no-repeat center;background-size:18px auto}
+#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt i{width:44px;height:34px;border-left:1px solid #707070;background:url(/asset/img/i_open_wh.svg) no-repeat center}
+#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dt i.is-accordion{background:url(/asset/img/i_close_wh.svg) no-repeat center}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dd ul li{margin-top:10px;line-height:1.6}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dd ul li a{display:inline-block;position:relative;padding-left:17px}
-#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dd ul li a[target=_blank]:after{content:'';display:inline-block;position:relative;top:1px;width:14px;height:14px;margin-left:3px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg) no-repeat center;background-size:18px auto}
+#l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dd ul li a[target=_blank]:after{content:'';display:inline-block;position:relative;top:1px;width:14px;height:14px;margin-left:3px;background:url(/asset/img/i_blank_wh.svg) no-repeat center;background-size:18px auto}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dd ul li a+a{margin-top:16px}
 #l_header .nav .gnav>li .mega-menu>dd .wrap .row dl.sec dd ul li a:before{content:'';position:absolute;margin:auto;top:10px;left:0;width:10px;height:2px;background:#fff}
-#l_header .nav .gnav .recruit a:after{content:'';display:inline-block;position:relative;top:1px;width:14px;height:14px;margin-left:3px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_bk.svg) no-repeat center;background-size:18px auto}
+#l_header .nav .gnav .recruit a:after{content:'';display:inline-block;position:relative;top:1px;width:14px;height:14px;margin-left:3px;background:url(/asset/img/i_blank_bk.svg) no-repeat center;background-size:18px auto}
 #l_header .drawr_btn{display:none;position:absolute;top:0;right:0;z-index:10;width:51px;height:51px;border-left:1px solid #ddd}
 #l_header .drawr_btn span{position:absolute;left:13px;width:23px;height:1px;background:#333;transition:opacity .3s,top .3s,transform .3s}
 #l_header .drawr_btn span:nth-of-type(1){top:22px}
@@ -90,15 +90,15 @@
 #l_footer #contact .row h3{font-weight:700;font-size:2rem}
 #l_footer #contact .row .no{margin-top:10px}
 #l_footer #contact .row .no a{color:#fff;font-weight:700;font-size:5.3rem;line-height:1.4}
-#l_footer #contact .row .no a:before{content:'';display:inline-block;position:relative;top:4px;width:44px;height:44px;margin-right:10px;border:2px solid #fff;border-radius:50px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_tel_wh.svg) no-repeat center;background-size:18px auto}
+#l_footer #contact .row .no a:before{content:'';display:inline-block;position:relative;top:4px;width:44px;height:44px;margin-right:10px;border:2px solid #fff;border-radius:50px;background:url(/asset/img/i_tel_wh.svg) no-repeat center;background-size:18px auto}
 #l_footer #contact .row .btn{margin-top:35px}
 #l_footer #contact .row .btn a{display:inline-block;width:330px;color:#fff;border:1px solid #fff;border-radius:50px;font-size:1.8rem;padding:13px 20px;font-weight:700}
 #l_footer #sitemap{background:#404040;padding:50px 0 40px;font-size:1.2rem;line-height:1.6}
 #l_footer #sitemap *{color:#fff}
 #l_footer #sitemap a{text-decoration:underline}
-#l_footer #sitemap a[target=_blank]:after{content:'';display:inline-block;position:relative;top:0;width:9px;height:9px;margin-left:2px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg) no-repeat center;background-size:9px auto}
-#l_footer #sitemap i{display:none;position:absolute;top:0;right:0;width:40px;height:39px;border-left:1px solid #707070;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_wh.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
-#l_footer #sitemap i.is-accordion{background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_wh.svg) no-repeat center}
+#l_footer #sitemap a[target=_blank]:after{content:'';display:inline-block;position:relative;top:0;width:9px;height:9px;margin-left:2px;background:url(/asset/img/i_blank_wh.svg) no-repeat center;background-size:9px auto}
+#l_footer #sitemap i{display:none;position:absolute;top:0;right:0;width:40px;height:39px;border-left:1px solid #707070;background:url(/asset/img/i_open_wh.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#l_footer #sitemap i.is-accordion{background:url(/asset/img/i_close_wh.svg) no-repeat center}
 #l_footer #sitemap .row{display:flex}
 #l_footer #sitemap .row>div.main{width:920px}
 #l_footer #sitemap .row>div.sub{width:200px;margin-left:auto}
@@ -128,7 +128,7 @@
 #l_container #path{padding-top:20px;font-size:1.2rem}
 #l_container #path ul li{display:inline}
 #l_container #path ul li a{text-decoration:underline}
-#l_container #path ul li a:after{content:'';display:inline-block;position:relative;top:1px;width:10px;height:10px;margin:0 5px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg) no-repeat center;background-size:14px auto}
+#l_container #path ul li a:after{content:'';display:inline-block;position:relative;top:1px;width:10px;height:10px;margin:0 5px;background:url(/asset/img/i_arr_bk.svg) no-repeat center;background-size:14px auto}
 #l_container #path ul li a.nolink{text-decoration:none}
 #l_container #path ul li a.nolink:hover{opacity:1}
 #l_container #page-title .parent{font-size:1.8rem;color:#707070;margin-bottom:10px;padding-left:1px}
@@ -142,23 +142,23 @@
 #l_container #column2 .wrapper .column_sub section+section{padding-top:30px}
 #l_container #column2 .wrapper .column_sub #lonav h3{padding-bottom:30px}
 #l_container #column2 .wrapper .column_sub #lonav h3 a{color:#005bac;display:inline-block}
-#l_container #column2 .wrapper .column_sub #lonav h3 a:before{content:'';display:inline-block;position:relative;top:1px;width:18px;height:18px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
+#l_container #column2 .wrapper .column_sub #lonav h3 a:before{content:'';display:inline-block;position:relative;top:1px;width:18px;height:18px;margin-right:7px;background:url(/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
 #l_container #column2 .wrapper .column_sub #lonav dl:last-child{border-bottom:1px solid #ddd}
 #l_container #column2 .wrapper .column_sub #lonav dl.cur dd{display:block}
 #l_container #column2 .wrapper .column_sub #lonav dl dt{position:relative;border-top:1px solid #ddd;cursor:pointer;padding:17px 0 17px 17px;line-height:1.6}
-#l_container #column2 .wrapper .column_sub #lonav dl dt:after{content:'';position:absolute;margin:auto;position:absolute;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
-#l_container #column2 .wrapper .column_sub #lonav dl dt.is-accordion:after{background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg) no-repeat center}
+#l_container #column2 .wrapper .column_sub #lonav dl dt:after{content:'';position:absolute;margin:auto;position:absolute;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/asset/img/i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#l_container #column2 .wrapper .column_sub #lonav dl dt.is-accordion:after{background:url(/asset/img/i_close_bk.svg) no-repeat center}
 #l_container #column2 .wrapper .column_sub #lonav dl dd{display:none;font-size:1.2rem;padding-bottom:20px}
 #l_container #column2 .wrapper .column_sub #lonav dl dd ul li+li{margin-top:3px}
 #l_container #column2 .wrapper .column_sub #lonav dl dd ul li.cur a{background:#005bac;color:#fff}
-#l_container #column2 .wrapper .column_sub #lonav dl dd ul li.cur a:after{background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_wh.svg) no-repeat center}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li.cur a:after{background:url(/asset/img/i_arr_wh.svg) no-repeat center}
 #l_container #column2 .wrapper .column_sub #lonav dl dd ul li a{position:relative;display:block;background:#edf6fe;padding:6px 18px;border-radius:4px}
-#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a:after{content:'';position:absolute;margin:auto;top:0;bottom:0;right:0;width:40px;height:36px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg) no-repeat center;background-size:14px!important}
-#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a[target=_blank]::before{content:'';display:inline-block;position:absolute;top:0;bottom:0;margin:auto 0;left:75px;width:15px;height:15px;margin-left:2px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_bk.svg) no-repeat center!important;background-size:15px auto}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a:after{content:'';position:absolute;margin:auto;top:0;bottom:0;right:0;width:40px;height:36px;background:url(/asset/img/i_arr_bk.svg) no-repeat center;background-size:14px!important}
+#l_container #column2 .wrapper .column_sub #lonav dl dd ul li a[target=_blank]::before{content:'';display:inline-block;position:absolute;top:0;bottom:0;margin:auto 0;left:75px;width:15px;height:15px;margin-left:2px;background:url(/asset/img/i_blank_bk.svg) no-repeat center!important;background-size:15px auto}
 #l_container #column2 .wrapper .column_sub #lonav p.cur{background-color:#edf6fe}
 #l_container #column2 .wrapper .column_sub #lonav p:last-child{border-bottom:1px solid #ddd}
 #l_container #column2 .wrapper .column_sub #lonav p a{display:block;position:relative;border-top:1px solid #ddd;cursor:pointer;padding:17px 0 17px 17px;line-height:1.6}
-#l_container #column2 .wrapper .column_sub #lonav p a:after{content:'';position:absolute;margin:auto;position:absolute;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#l_container #column2 .wrapper .column_sub #lonav p a:after{content:'';position:absolute;margin:auto;position:absolute;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/asset/img/i_arr_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
 #l_container #column2 .wrapper .column_sub #bnr .ir-mail{background:#005bac;padding:20px}
 #l_container #column2 .wrapper .column_sub #bnr .ir-mail h3{font-size:1.6rem;color:#fff;font-weight:700}
 #l_container #column2 .wrapper .column_sub #bnr .ir-mail .txt{line-height:1.6;font-size:1.4rem;margin:5px 0 13px;color:#fff}

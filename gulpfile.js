@@ -1,6 +1,6 @@
 // * ----------------------------------------
 // * 設定
-const rootDir = 'www/';
+const rootDir = 'www/static/';
 const srcDir = 'www/_src/';
 const destDir = 'www/asset/';
 const destDir02 = 'www/static/asset/';

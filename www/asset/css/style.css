@@ -3,15 +3,15 @@
 #page_company #index_menu ul li a{display:block}
 #page_company #index_menu ul li a .txt{padding:15px 13px 13px}
 #page_company #index_menu ul li a .txt h3{position:relative;font-size:1.8rem;color:#005bac;font-weight:700;margin-bottom:10px;padding-left:25px}
-#page_company #index_menu ul li a .txt h3:before{content:"";position:absolute;margin:auto;top:4px;left:0;width:18px;height:18px;margin-right:10px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
+#page_company #index_menu ul li a .txt h3:before{content:"";position:absolute;margin:auto;top:4px;left:0;width:18px;height:18px;margin-right:10px;background:url(/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
 #page_company #index_menu ul li a .txt p{line-height:1.6}
 #page_company #message .message{margin:35px 0 30px}
 #page_company #message dl{text-align:right}
 #page_company #message dl dd{margin-top:10px}
 #page_company #message .katou{width:150px}
 #page_company #chart-list .item>dt{font-weight:700;padding:16px 0 10px;border-bottom:1px solid #b2cee6;position:relative}
-#page_company #chart-list .item>dt::before{position:absolute;content:"";top:0;bottom:0;margin:auto 0;right:0;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg) no-repeat center;width:51px;height:51px;background-size:18px auto!important;transition:background .3s}
-#page_company #chart-list .item>dt.is-accordion::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_close_bk.svg) no-repeat center}
+#page_company #chart-list .item>dt::before{position:absolute;content:"";top:0;bottom:0;margin:auto 0;right:0;background:url(/asset/img/i_open_bk.svg) no-repeat center;width:51px;height:51px;background-size:18px auto!important;transition:background .3s}
+#page_company #chart-list .item>dt.is-accordion::before{background:url(/asset/img//i_close_bk.svg) no-repeat center}
 #page_company #chart-list .item>dt em{font-size:2.1rem;color:#005bac;width:120px;display:inline-block}
 #page_company #chart-list .item>dt span{font-weight:400}
 #page_company #chart-list .item>dt span.birth{font-size:1.2rem;display:inline-block;margin-left:10px}
@@ -38,8 +38,8 @@
 #page_company #chart-Independence ul li{padding-left:1.25em;text-indent:-1.25em}
 #page_company #chart-Independence .indent01{display:inline-block;text-indent:1em}
 #page_company #chart-Independence .continuation{color:#005bac;text-align:center;margin-top:10px;position:relative}
-#page_company #chart-Independence .continuation::before{content:"";position:absolute;margin:auto;position:absolute;bottom:-20px;left:50%;transform:translateX(-50%) rotate(90deg);width:32px;height:32px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_arr.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
-#page_company #chart-Independence .continuation::after{content:"";position:absolute;margin:auto;position:absolute;bottom:-27px;left:50%;transform:translateX(-50%) rotate(90deg);width:32px;height:32px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_arr.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#page_company #chart-Independence .continuation::before{content:"";position:absolute;margin:auto;position:absolute;bottom:-20px;left:50%;transform:translateX(-50%) rotate(90deg);width:32px;height:32px;background:url(/asset/img//i_arr.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#page_company #chart-Independence .continuation::after{content:"";position:absolute;margin:auto;position:absolute;bottom:-27px;left:50%;transform:translateX(-50%) rotate(90deg);width:32px;height:32px;background:url(/asset/img//i_arr.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
 #page_company #chart-organization div.table-cover{margin:15px 0}
 #page_company #chart-organization div.table-cover .inner{display:flex;min-width:0}
 #page_company #chart-organization picture{text-align:center;margin-top:10px}
@@ -76,8 +76,8 @@
 #page_company #compliance .parenting .box ul li div.table-cover .scroll{display:none;margin-top:10px;font-weight:700;text-align:right}
 #page_company #compliance .parenting .box .note{color:#005bac;word-break:break-all;display:block}
 #page_company #compliance .parenting .box .plan dt{font-weight:700;position:relative;padding-bottom:3px;margin:20px 0 10px;border-bottom:1px solid #ebebeb}
-#page_company #compliance .parenting .box .plan dt::after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
-#page_company #compliance .parenting .box .plan dt.is-accordion::after{background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_close_bk.svg) no-repeat center}
+#page_company #compliance .parenting .box .plan dt::after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/asset/img//i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#page_company #compliance .parenting .box .plan dt.is-accordion::after{background:url(/asset/img//i_close_bk.svg) no-repeat center}
 #page_company #compliance .parenting .box .plan dd{display:none}
 #page_company #compliance .parenting .box .plan dd ul li em{font-weight:700;display:block}
 #page_company #compliance .parenting .box .plan dd ul li>p{font-weight:700;padding-left:1em}
@@ -113,7 +113,7 @@
 #page_company #outline div.table-cover .inner dd{width:calc(100% - 200px)}
 #page_company #outline div.table-cover .inner dd a{color:#005bac}
 #page_company #outline div.table-cover .inner dd a.map{position:relative;padding-right:5px;display:inline-block}
-#page_company #outline div.table-cover .inner dd a.map::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
+#page_company #outline div.table-cover .inner dd a.map::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
 #page_company #outline div.table-cover .inner dd p a{position:relative;display:inline-block;padding-left:1em}
 #page_company #outline div.table-cover .inner dd p a::after{content:"";position:absolute;top:13px;left:0;width:4px;height:4px;border-radius:50%;background-color:#005bac}
 #page_company #outline div.table-cover .inner dd span{display:inline-block;margin-top:10px}
@@ -127,9 +127,9 @@
 #page_company #group01 div.table-cover .inner dd,#page_company #group02 div.table-cover .inner dd,#page_company #group03 div.table-cover .inner dd,#page_company #group05 div.table-cover .inner dd{width:calc(100% - 200px)}
 #page_company #group01 div.table-cover .inner dd a,#page_company #group02 div.table-cover .inner dd a,#page_company #group03 div.table-cover .inner dd a,#page_company #group05 div.table-cover .inner dd a{color:#005bac}
 #page_company #group01 div.table-cover .inner dd a.map,#page_company #group02 div.table-cover .inner dd a.map,#page_company #group03 div.table-cover .inner dd a.map,#page_company #group05 div.table-cover .inner dd a.map{position:relative;padding-right:5px;display:inline-block}
-#page_company #group01 div.table-cover .inner dd a.map::before,#page_company #group02 div.table-cover .inner dd a.map::before,#page_company #group03 div.table-cover .inner dd a.map::before,#page_company #group05 div.table-cover .inner dd a.map::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
+#page_company #group01 div.table-cover .inner dd a.map::before,#page_company #group02 div.table-cover .inner dd a.map::before,#page_company #group03 div.table-cover .inner dd a.map::before,#page_company #group05 div.table-cover .inner dd a.map::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
 #page_company #group01 div.table-cover .inner dd p a,#page_company #group02 div.table-cover .inner dd p a,#page_company #group03 div.table-cover .inner dd p a,#page_company #group05 div.table-cover .inner dd p a{position:relative;padding-right:5px;display:inline-block;padding-left:1em}
-#page_company #group01 div.table-cover .inner dd p a::before,#page_company #group02 div.table-cover .inner dd p a::before,#page_company #group03 div.table-cover .inner dd p a::before,#page_company #group05 div.table-cover .inner dd p a::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
+#page_company #group01 div.table-cover .inner dd p a::before,#page_company #group02 div.table-cover .inner dd p a::before,#page_company #group03 div.table-cover .inner dd p a::before,#page_company #group05 div.table-cover .inner dd p a::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
 #page_company #group01 div.table-cover .inner dd p a::after,#page_company #group02 div.table-cover .inner dd p a::after,#page_company #group03 div.table-cover .inner dd p a::after,#page_company #group05 div.table-cover .inner dd p a::after{content:"";position:absolute;top:13px;left:0;width:4px;height:4px;border-radius:50%;background-color:#005bac}
 #page_company #group01 div.table-cover .inner dd span,#page_company #group02 div.table-cover .inner dd span,#page_company #group03 div.table-cover .inner dd span,#page_company #group05 div.table-cover .inner dd span{display:inline-block;margin-top:10px}
 #page_company #group01 .scroll,#page_company #group02 .scroll,#page_company #group03 .scroll,#page_company #group05 .scroll{display:none;margin-top:10px;font-weight:700;text-align:right}
@@ -146,13 +146,13 @@
 #page_company #reconstruction div.table-cover .inner dd{width:calc(100% - 200px);background-color:#fff}
 #page_company #reconstruction div.table-cover .inner dd a{color:#005bac}
 #page_company #reconstruction div.table-cover .inner dd p a{position:relative;padding-right:5px;display:inline-block;padding-left:1em}
-#page_company #reconstruction div.table-cover .inner dd p a::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
+#page_company #reconstruction div.table-cover .inner dd p a::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/asset/img//i_blank_blue.svg) no-repeat center;background-size:12px auto}
 #page_company #reconstruction div.table-cover .inner dd p a::after{content:"";position:absolute;top:13px;left:0;width:4px;height:4px;border-radius:50%;background-color:#005bac}
 #page_company #reconstruction div.table-cover .inner dd span{display:inline-block;margin-top:10px}
 #page_company #reconstruction .scroll{display:none;margin-top:10px;font-weight:700;text-align:right}
 #page_company #attempt .box dl dt{color:#4d8dc5;padding:15px;background-color:#ebebeb;position:relative}
-#page_company #attempt .box dl dt::after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
-#page_company #attempt .box dl dt.is-accordion::after{background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_close_bk.svg) no-repeat center}
+#page_company #attempt .box dl dt::after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/asset/img//i_open_bk.svg) no-repeat center;background-size:18px auto!important;transition:background .3s}
+#page_company #attempt .box dl dt.is-accordion::after{background:url(/asset/img//i_close_bk.svg) no-repeat center}
 #page_company #attempt .box dl dd{margin-top:20px;display:none}
 #page_company #attempt .box dl dd span{display:inline-block;margin-top:10px}
 #page_company #attempt .box dl dd .name{margin-top:10px;text-align:right}
@@ -163,12 +163,12 @@
 #page_company #attempt .box dl:not(:first-child){margin-top:30px}
 #page_company #hub div.table-cover .inner{min-width:0}
 #page_company #hub div.table-cover .scroll{display:none;margin-top:10px;font-weight:700;text-align:right}
-#page_company #hub .hub-image{background:url(/wp-content/themes/aisantec.co.jp/asset/img/company/hub/hub01.jpg) no-repeat center;width:830px;height:587px;background-size:contain}
+#page_company #hub .hub-image{background:url(/asset/img/company/hub/hub01.jpg) no-repeat center;width:830px;height:587px;background-size:contain}
 #page_company #hub .image-box{padding:40px;display:flex;justify-content:space-between;max-width:640px}
 #page_company #hub .image-box ul{width:calc(50% - 15px)}
 #page_company #hub .image-box ul li{position:relative;padding-bottom:5px;border-bottom:1px solid #edf6fe}
 #page_company #hub .image-box ul li+li{margin-top:5px}
-#page_company #hub .image-box ul li::after{content:"";margin:auto;position:absolute;top:0;bottom:0;right:0;width:10px;height:10px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_wh.svg) no-repeat center;background-size:18px auto!important;transition:background .3s;transform:rotate(90deg)}
+#page_company #hub .image-box ul li::after{content:"";margin:auto;position:absolute;top:0;bottom:0;right:0;width:10px;height:10px;background:url(/asset/img/i_arr_wh.svg) no-repeat center;background-size:18px auto!important;transition:background .3s;transform:rotate(90deg)}
 #page_company #hub .image-box ul li a{color:#fff;position:relative;padding-left:2.8rem;display:block;font-size:1.4rem}
 #page_company #hub .image-box ul li a::after,#page_company #hub .image-box ul li a::before{position:absolute;top:0;bottom:0;margin:auto 0}
 #page_company #hub .image-box ul li a::before{content:"";position:absolute;border-radius:50%;background-color:#fff;width:19px;height:19px;left:0}
@@ -201,7 +201,7 @@
 #page_company #hub .tel-box{text-align:center;border:1px solid #005bac;padding:30px}
 #page_company #hub .tel-box em{font-size:1.8rem;color:#005bac;display:block;line-height:1.2}
 #page_company #hub .tel-box .tel{display:inline-block;padding-left:70px;color:#005bac;font-weight:700;position:relative;font-size:3.5rem}
-#page_company #hub .tel-box .tel::before{content:"";position:absolute;top:0;bottom:0;margin:auto 0;left:0;background:url(/wp-content/themes/aisantec.co.jp/asset/img//company/hub/tel-icon-blue.png) no-repeat center;width:53px;height:53px;background-size:contain}
+#page_company #hub .tel-box .tel::before{content:"";position:absolute;top:0;bottom:0;margin:auto 0;left:0;background:url(/asset/img//company/hub/tel-icon-blue.png) no-repeat center;width:53px;height:53px;background-size:contain}
 #page_company #hub .tel-box p{font-weight:700;font-size:1.4rem}
 #page_company #protection .box{margin-top:30px}
 #page_company #protection .box dl{margin-top:20px}
@@ -218,7 +218,7 @@
 #page_ir .link-type01{color:#005bac;text-align:center;font-family:"Noto Sans JP";font-size:15px;font-style:normal;font-weight:700;line-height:100%;letter-spacing:2.25px;text-decoration-line:underline;text-decoration-style:solid;text-decoration-skip-ink:auto;text-decoration-thickness:auto;text-underline-offset:auto;text-underline-position:from-font;padding-left:20px}
 #page_ir .link-type01::before{content:"";position:absolute;margin:auto;top:2px;left:0;width:14px;height:14px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr.svg) no-repeat center;background-size:14px}
 #page_ir #index_main-img{overflow:hidden}
-#page_ir #index_main-img .wrapper{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/main-img_bg02.webp) no-repeat center bottom;background-size:cover!important;height:650px;padding-top:100px;position:relative}
+#page_ir #index_main-img .wrapper{background:url(/asset/img/ir/main-img_bg02.webp) no-repeat center bottom;background-size:cover!important;height:650px;padding-top:100px;position:relative}
 #page_ir #index_main-img .wrapper>*{position:absolute}
 #page_ir #index_main-img .wrapper .logo.--01{height:13%;top:8%;left:38%}
 #page_ir #index_main-img .wrapper .logo.--02{height:8%;top:11%;left:6%}
@@ -263,10 +263,10 @@
 #page_ir #index_essential .slide{flex-basis:auto;width:100%}
 #page_ir #index_essential .slide .item .wrap{position:relative;padding:15px 0 15px 280px}
 #page_ir #index_essential .slide .item h3{position:absolute;top:0;left:0;z-index:5;font-size:1.6rem;flex-shrink:0;width:250px;height:67px;padding-top:19px;text-align:center;background:rgba(0,0,0,.3)}
-#page_ir #index_essential .slide .item h3:before{content:"";display:inline-block;position:relative;top:5px;width:22px;height:22px;margin-right:5px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_caution_wh.svg) no-repeat center}
+#page_ir #index_essential .slide .item h3:before{content:"";display:inline-block;position:relative;top:5px;width:22px;height:22px;margin-right:5px;background:url(/asset/img/i_caution_wh.svg) no-repeat center}
 #page_ir #index_essential .slide .item a,#page_ir #index_essential .slide .item span{display:flex}
 #page_ir #index_essential .slide .item a .day,#page_ir #index_essential .slide .item span .day{font-size:1.2rem;padding-top:9px;margin-right:20px}
-#page_ir #index_essential .slide .item a[target=_blank] .ttl:after,#page_ir #index_essential .slide .item span[target=_blank] .ttl:after{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-left:5px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_wh.svg) no-repeat center}
+#page_ir #index_essential .slide .item a[target=_blank] .ttl:after,#page_ir #index_essential .slide .item span[target=_blank] .ttl:after{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-left:5px;background:url(/asset/img/i_blank_wh.svg) no-repeat center}
 #page_ir #index_essential .slide .item a .ttl,#page_ir #index_essential .slide .item span .ttl{padding-top:1px;text-decoration:underline;font-size:1.8rem}
 #page_ir #index_essential .slide .item a .ttl.sp,#page_ir #index_essential .slide .item span .ttl.sp{display:none}
 #page_ir #index_essential .slide .item a .ttl.tb,#page_ir #index_essential .slide .item span .ttl.tb{display:none}
@@ -274,7 +274,7 @@
 #page_ir #index_essential .slide .item span .ttl:after{display:none}
 #page_ir #index_essential .slide .slick-next{right:20px}
 #page_ir #index_essential .slide .slick-prev{left:auto;right:60px;transform:translate(0,-50%) rotate(180deg)}
-#page_ir #index_essential .slide .slick-arrow{z-index:5;width:30px;height:30px;border:1px solid #fff;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_wh.svg) no-repeat center;background-size:20px auto}
+#page_ir #index_essential .slide .slick-arrow{z-index:5;width:30px;height:30px;border:1px solid #fff;background:url(/asset/img/i_arr_wh.svg) no-repeat center;background-size:20px auto}
 #page_ir #index_essential .slide .slick-arrow:before{display:none}
 #page_ir #index_essential .slide .slick-arrow.slick-disabled{opacity:.3}
 #page_ir #index_pickup h2 img{left:7px}
@@ -283,15 +283,15 @@
 #page_ir #index_pickup .row div.w50{width:50%}
 #page_ir #index_pickup .row div .inner,#page_ir #index_pickup .row div>a{display:block;position:relative;height:250px;border-radius:6px;overflow:hidden;background-size:cover!important}
 #page_ir #index_pickup .row div .inner>*,#page_ir #index_pickup .row div>a>*{position:relative;z-index:10}
-#page_ir #index_pickup .row div .inner.message,#page_ir #index_pickup .row div>a.message{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_message.jpg) no-repeat center}
-#page_ir #index_pickup .row div .inner.plan,#page_ir #index_pickup .row div>a.plan{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_vision.jpg) no-repeat center}
-#page_ir #index_pickup .row div .inner.vision,#page_ir #index_pickup .row div>a.vision{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_plan.jpg) no-repeat center}
-#page_ir #index_pickup .row div .inner.sustainability,#page_ir #index_pickup .row div>a.sustainability{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_sustainability.jpg) no-repeat center}
-#page_ir #index_pickup .row div .inner.investors,#page_ir #index_pickup .row div>a.investors{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_investors.webp) no-repeat center}
-#page_ir #index_pickup .row div .inner.challenge-story,#page_ir #index_pickup .row div>a.challenge-story{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_challenge-story.webp) no-repeat center}
+#page_ir #index_pickup .row div .inner.message,#page_ir #index_pickup .row div>a.message{background:url(/asset/img/ir/pickup_message.jpg) no-repeat center}
+#page_ir #index_pickup .row div .inner.plan,#page_ir #index_pickup .row div>a.plan{background:url(/asset/img/ir/pickup_vision.jpg) no-repeat center}
+#page_ir #index_pickup .row div .inner.vision,#page_ir #index_pickup .row div>a.vision{background:url(/asset/img/ir/pickup_plan.jpg) no-repeat center}
+#page_ir #index_pickup .row div .inner.sustainability,#page_ir #index_pickup .row div>a.sustainability{background:url(/asset/img/ir/pickup_sustainability.jpg) no-repeat center}
+#page_ir #index_pickup .row div .inner.investors,#page_ir #index_pickup .row div>a.investors{background:url(/asset/img/ir/pickup_investors.webp) no-repeat center}
+#page_ir #index_pickup .row div .inner.challenge-story,#page_ir #index_pickup .row div>a.challenge-story{background:url(/asset/img/ir/pickup_challenge-story.webp) no-repeat center}
 #page_ir #index_pickup .row div>a:before{content:"";position:absolute;margin:auto;top:0;left:0;width:100%;height:100%;background:linear-gradient(0deg,rgba(0,0,0,.3) 0,rgba(255,255,255,0) 50%)}
 #page_ir #index_pickup .row div .link-txt{position:absolute;bottom:20px;left:0;width:100%;padding:0 25px;font-size:2.1rem;font-weight:700;color:#fff;line-height:1.4}
-#page_ir #index_pickup .row div .link-txt:before{content:"";position:absolute;margin:auto;top:0;bottom:0;margin:auto;right:20px;width:43px;height:43px;border-radius:50px;border:1px solid #fff;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_wh.svg) no-repeat center;background-size:25px}
+#page_ir #index_pickup .row div .link-txt:before{content:"";position:absolute;margin:auto;top:0;bottom:0;margin:auto;right:20px;width:43px;height:43px;border-radius:50px;border:1px solid #fff;background:url(/asset/img/i_arr_wh.svg) no-repeat center;background-size:25px}
 #page_ir #index_news{padding:100px 0}
 #page_ir #index_news .m_box_fixed{display:flex;justify-content:space-between}
 #page_ir #index_news .m_box_fixed .s_eirTab{font-size:14px;position:relative;top:initial;width:calc(100% + 10px)}
@@ -331,7 +331,7 @@
 #page_ir #topics .m_box_fixed .topics_inner .link-parent .link .frame-container .background-parent .time-202508081{font-size:var(--font-size-15);letter-spacing:2.25px;font-family:var(--font-outfit);display:flex;align-items:center}
 #page_ir #topics .m_box_fixed .topics_inner .link-parent .link .frame-container .wrapper{width:100%;text-align:left;font-size:var(--font-size-14);font-family:var(--font-noto-sans-jp)}
 #page_ir #topics .m_box_fixed .topics_inner .link-parent .link .frame-container .wrapper .div2{line-height:160%;letter-spacing:2.25px;width:100%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
-#page_ir #investors .rectangle-parent{width:100%;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:82px 0;box-sizing:border-box;background-image:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/investors-sec-bg.webp);background-size:cover;background-repeat:no-repeat;background-position:top;text-align:left;font-size:var(--font-size-15);font-family:var(--font-noto-sans-jp);color:var(--color-white)}
+#page_ir #investors .rectangle-parent{width:100%;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:82px 0;box-sizing:border-box;background-image:url(/asset/img/ir/investors-sec-bg.webp);background-size:cover;background-repeat:no-repeat;background-position:top;text-align:left;font-size:var(--font-size-15);font-family:var(--font-noto-sans-jp);color:var(--color-white)}
 #page_ir #investors .rectangle-parent .frame-child{width:1176px;height:100%;position:absolute;top:0;left:0;margin:0!important;background:linear-gradient(90deg,rgba(15,42,69,.32),rgba(255,255,255,0));z-index:0}
 #page_ir #investors .rectangle-parent .frame-wrapper{width:1200px;display:flex;flex-direction:column;align-items:flex-start;z-index:1}
 #page_ir #investors .rectangle-parent .frame-wrapper .frame-parent{width:507px;display:flex;flex-direction:column;gap:28px;filter:drop-shadow(0 2px 4px rgba(0, 0, 0, .25))}
@@ -397,12 +397,12 @@
 #page_ir #index_menu h2 img{left:7px}
 #page_ir #index_menu .row{display:flex;flex-wrap:wrap;margin:-10px 0 0 -10px}
 #page_ir #index_menu .row>*{width:33.3333333333%;padding:10px 0 0 10px}
-#page_ir #index_menu .row .management{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/menu_management.svg) no-repeat right bottom}
+#page_ir #index_menu .row .management{background:url(/asset/img/ir/menu_management.svg) no-repeat right bottom}
 #page_ir #index_menu .row .management .split li small{font-size:14px}
-#page_ir #index_menu .row .governance{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/menu_governance.svg) no-repeat right bottom}
-#page_ir #index_menu .row .library{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/menu_library.svg) no-repeat right bottom}
-#page_ir #index_menu .row .financial{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/menu_financial.svg) no-repeat right bottom}
-#page_ir #index_menu .row .about{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/menu_about.svg) no-repeat right bottom}
+#page_ir #index_menu .row .governance{background:url(/asset/img/ir/menu_governance.svg) no-repeat right bottom}
+#page_ir #index_menu .row .library{background:url(/asset/img/ir/menu_library.svg) no-repeat right bottom}
+#page_ir #index_menu .row .financial{background:url(/asset/img/ir/menu_financial.svg) no-repeat right bottom}
+#page_ir #index_menu .row .about{background:url(/asset/img/ir/menu_about.svg) no-repeat right bottom}
 #page_ir #index_menu .row .w50{width:50%}
 #page_ir #index_menu .row .inner{position:relative;background-size:150px auto!important;height:100%;border-radius:6px;overflow:hidden;padding:30px;border:1px solid #ddd;background-color:#fff}
 #page_ir #index_menu .row .inner:before{content:"";position:absolute;margin:auto;top:0;left:0;width:100%;height:3px;background:#005bac}
@@ -411,15 +411,15 @@
 #page_ir #index_menu .row .inner ul.split{display:flex;flex-wrap:wrap}
 #page_ir #index_menu .row .inner ul.split li{width:50%}
 #page_ir #index_menu .row .inner ul li{position:relative;padding-left:20px}
-#page_ir #index_menu .row .inner ul li:before{content:"";position:absolute;margin:auto;top:7px;left:0;width:14px;height:14px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr.svg) no-repeat center;background-size:14px}
+#page_ir #index_menu .row .inner ul li:before{content:"";position:absolute;margin:auto;top:7px;left:0;width:14px;height:14px;background:url(/asset/img/i_arr.svg) no-repeat center;background-size:14px}
 #page_ir #index_menu .row .inner ul li .sub-menu div a{display:block;background:#fff;border-radius:6px;font-size:1.8rem;color:#005bac;font-weight:700;border:1px solid #ddd;padding:27px}
-#page_ir #index_menu .row .inner ul li .sub-menu div a:before{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
+#page_ir #index_menu .row .inner ul li .sub-menu div a:before{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-right:7px;background:url(/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
 #page_ir #index_menu .row .investors{display:flex;flex-direction:column;justify-content:space-between}
 #page_ir #index_menu .row .sub-menu>div{width:100%}
 #page_ir #index_menu .sub-menu{display:flex;flex-wrap:wrap;margin:-10px 0 0 -10px;margin-top:10px;text-align:center}
 #page_ir #index_menu .sub-menu>*{width:33.3333333333%;padding:10px 0 0 10px}
 #page_ir #index_menu .sub-menu div a{display:block;background:#fff;border-radius:6px;font-size:1.8rem;color:#005bac;font-weight:700;border:1px solid #ddd;padding:27px}
-#page_ir #index_menu .sub-menu div a:before{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-right:7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
+#page_ir #index_menu .sub-menu div a:before{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-right:7px;background:url(/asset/img/i_arr02.svg) no-repeat center;background-size:18px!important}
 #page_ir #contact{background:#005bac;padding:80px 0;color:#fff;text-align:center}
 #page_ir #contact h2{font-size:2.2rem;font-weight:700;margin-bottom:25px}
 #page_ir #contact .btn a{display:inline-block;width:360px;padding:13px 20px;border-radius:50px;background:#fff;color:#005bac;font-size:1.8rem;font-weight:700}
@@ -640,13 +640,13 @@
 #page_ir #risk_business .table-cover>dl{border-top:1px solid #005bac;padding:18px 0 20px}
 #page_ir #risk_business .table-cover>dl:nth-last-of-type(1){border-bottom:1px solid #005bac}
 #page_ir #risk_business .table-cover>dl>dt{color:#005bac;font-weight:700;font-size:1.8rem;position:relative;cursor:pointer;transition:background .3s}
-#page_ir #risk_business .table-cover>dl>dt::after{content:"";background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg) no-repeat center;background-size:23px auto!important;width:51px;height:51px;position:absolute;margin:auto;top:0;bottom:0;right:0;border-radius:50%}
-#page_ir #risk_business .table-cover>dl>dt.is-accordion::after{transition:background .3s;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg) no-repeat center}
+#page_ir #risk_business .table-cover>dl>dt::after{content:"";background:url(/asset/img/i_open_bk.svg) no-repeat center;background-size:23px auto!important;width:51px;height:51px;position:absolute;margin:auto;top:0;bottom:0;right:0;border-radius:50%}
+#page_ir #risk_business .table-cover>dl>dt.is-accordion::after{transition:background .3s;background:url(/asset/img/i_close_bk.svg) no-repeat center}
 #page_ir #risk_business .table-cover>dl>dd{display:none;padding:20px 0;border-bottom:1px solid #4d8dc5}
 #page_ir #risk_business .table-cover>dl>dd>p{position:relative;padding-left:1em;transition:background .3s;cursor:pointer}
 #page_ir #risk_business .table-cover>dl>dd>p::before{content:"";left:0;top:0;bottom:0;margin:auto 0;position:absolute;border-radius:50%;width:4px;height:4px;background-color:#333}
-#page_ir #risk_business .table-cover>dl>dd>p::after{content:"";background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg) no-repeat center;background-size:23px auto!important;width:51px;height:51px;position:absolute;margin:auto;top:0;bottom:0;right:0;border-radius:50%}
-#page_ir #risk_business .table-cover>dl>dd>p.is-accordion::after{transition:background .3s;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg) no-repeat center}
+#page_ir #risk_business .table-cover>dl>dd>p::after{content:"";background:url(/asset/img/i_open_bk.svg) no-repeat center;background-size:23px auto!important;width:51px;height:51px;position:absolute;margin:auto;top:0;bottom:0;right:0;border-radius:50%}
+#page_ir #risk_business .table-cover>dl>dd>p.is-accordion::after{transition:background .3s;background:url(/asset/img/i_close_bk.svg) no-repeat center}
 #page_ir #risk_business .table-cover>dl>dd .inner-wrap{display:none}
 #page_ir #risk_business .table-cover>dl>dd .inner{border-top:1px solid #4d8dc5;border-left:1px solid #4d8dc5;margin-top:8px}
 #page_ir #risk_business .table-cover>dl>dd .inner dl{display:flex}
@@ -662,7 +662,7 @@
 #page_ir #risk_business .adjust{display:block;margin-top:15px}
 #page_ir .page-discroure section span{display:block;margin-top:10px}
 #page_ir #information_all .information_year{display:inline-block;padding:8px 14px;border:1px solid #ebebeb;position:relative;width:150px;margin-bottom:25px}
-#page_ir #information_all .information_year::after{content:"";position:absolute;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr.svg) no-repeat center;margin:auto;top:0;bottom:0;right:0;width:40px;height:36px;background-size:14px!important;transform:rotate(90deg)}
+#page_ir #information_all .information_year::after{content:"";position:absolute;background:url(/asset/img/i_arr.svg) no-repeat center;margin:auto;top:0;bottom:0;right:0;width:40px;height:36px;background-size:14px!important;transform:rotate(90deg)}
 #page_ir #information_all ul{display:flex;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
 #page_ir #information_all ul li{width:25%;text-align:center;border-left:1px solid #ddd}
 #page_ir #information_all ul li:last-child{border-right:1px solid #ddd}
@@ -779,7 +779,7 @@
 #page_ir #sustainability_sdgs .box p{display:block;text-align:center;margin-top:15px}
 #page_ir #sustainability_sdgs .box p span{display:inline-block;background-color:#edf6fe;width:200px;padding:5px 20px;border-radius:30px;max-width:130px;position:relative;font-size:12px;cursor:pointer}
 #page_ir #sustainability_sdgs .box p span.is-open::before{transform:rotate(-90deg)}
-#page_ir #sustainability_sdgs .box p span::before{content:"";position:absolute;margin:auto;top:0;bottom:0;right:12px;width:10px;height:10px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg) no-repeat center;background-size:14px auto;transform:rotate(90deg);transition:transform .5s}
+#page_ir #sustainability_sdgs .box p span::before{content:"";position:absolute;margin:auto;top:0;bottom:0;right:12px;width:10px;height:10px;background:url(/asset/img/i_arr_bk.svg) no-repeat center;background-size:14px auto;transform:rotate(90deg);transition:transform .5s}
 #page_ir #sustainability_sdgs .indent01{display:inline-block;text-indent:1em}
 #page_ir #sustainability_sdgs .adjust{display:inline-block;margin-top:10px}
 #page_ir #sustainability_esg .box{margin-top:30px;display:flex;justify-content:space-between;align-items:center}
@@ -923,7 +923,7 @@
 #page_ir #information_status dl{padding:30px 0;border-top:1px solid #ddd}
 #page_ir #information_status dl dt a{color:#005bac}
 #page_ir #information_status dl dt a span{display:inline-block;padding-left:15px;position:relative;margin-top:0}
-#page_ir #information_status dl dt a span::before{content:"";display:inline-block;position:absolute;left:0;top:0;bottom:0;margin:auto 0;background:url(/wp-content/themes/aisantec.co.jp/asset/img//ir/announcement/pdf-icon.svg) no-repeat center;background-size:contain;width:15px;height:15px}
+#page_ir #information_status dl dt a span::before{content:"";display:inline-block;position:absolute;left:0;top:0;bottom:0;margin:auto 0;background:url(/asset/img//ir/announcement/pdf-icon.svg) no-repeat center;background-size:contain;width:15px;height:15px}
 #page_ir #information_status dl dd{margin-top:5px}
 #page_ir #information_status dl:nth-last-of-type(1){border-bottom:1px solid #ddd}
 #page_ir #information_status .adobe{display:flex;align-items:center;margin-top:30px}
@@ -939,7 +939,7 @@
 #page_ir #information_statuscompare dl{padding:30px 0;border-top:1px solid #ddd}
 #page_ir #information_statuscompare dl dt a{color:#005bac}
 #page_ir #information_statuscompare dl dt a span{display:inline-block;padding-left:15px;position:relative;margin-top:0}
-#page_ir #information_statuscompare dl dt a span::before{content:"";display:inline-block;position:absolute;left:0;top:0;bottom:0;margin:auto 0;background:url(/wp-content/themes/aisantec.co.jp/asset/img//ir/announcement/pdf-icon.svg) no-repeat center;background-size:contain;width:15px;height:15px}
+#page_ir #information_statuscompare dl dt a span::before{content:"";display:inline-block;position:absolute;left:0;top:0;bottom:0;margin:auto 0;background:url(/asset/img//ir/announcement/pdf-icon.svg) no-repeat center;background-size:contain;width:15px;height:15px}
 #page_ir #information_statuscompare dl dd{margin-top:5px}
 #page_ir #information_statuscompare dl:nth-last-of-type(1){border-bottom:1px solid #ddd}
 #page_ir #information_statuscompare .adobe{display:flex;align-items:center;margin-top:30px}
@@ -977,8 +977,8 @@
 #page_ir #faq .inner dl dt{font-weight:700;color:#005bac;padding-bottom:5px;padding-left:1.5em;position:relative;border-bottom:1px solid #b2cee6;font-size:1.8rem;transition:.3s background}
 #page_ir #faq .inner dl dt::after,#page_ir #faq .inner dl dt::before{position:absolute;top:0;bottom:0;margin:auto 0}
 #page_ir #faq .inner dl dt::before{content:"Q.";font-size:1.8rem;left:0}
-#page_ir #faq .inner dl dt::after{content:"";background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_open_bk.svg) no-repeat center;background-size:23px auto!important;width:51px;height:51px;right:0;transition:.3s background}
-#page_ir #faq .inner dl dt.is-accordion::after{background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_close_bk.svg) no-repeat center}
+#page_ir #faq .inner dl dt::after{content:"";background:url(/asset/img/i_open_bk.svg) no-repeat center;background-size:23px auto!important;width:51px;height:51px;right:0;transition:.3s background}
+#page_ir #faq .inner dl dt.is-accordion::after{background:url(/asset/img/i_close_bk.svg) no-repeat center}
 #page_ir #faq .inner dl dd{margin-top:8px}
 #page_ir #faq .inner dl dd ul{padding-left:1em}
 #page_ir #faq .inner dl dd ul li{text-indent:-1em;padding-left:1em}
@@ -988,7 +988,7 @@
 #page_ir #electronic_public-notice dl dt{font-size:1.6rem}
 #page_ir #electronic_public-notice dl dt a{display:inline-block;color:#005bac}
 #page_ir #electronic_public-notice dl dt a span{display:inline-block;padding-left:1.5em;position:relative}
-#page_ir #electronic_public-notice dl dt a span::before{content:"";position:absolute;top:0;bottom:0;margin:auto 0;left:0;background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/announcement/pdf-icon.svg) no-repeat;background-size:contain;width:20px;height:20px}
+#page_ir #electronic_public-notice dl dt a span::before{content:"";position:absolute;top:0;bottom:0;margin:auto 0;left:0;background:url(/asset/img/ir/announcement/pdf-icon.svg) no-repeat;background-size:contain;width:20px;height:20px}
 #page_ir #electronic_public-notice dl dd{margin-top:5px}
 #page_ir #electronic_public-notice dl:nth-of-type(3){border-bottom:1px solid #ebebeb}
 #page_ir #electronic_public-notice .adobe{display:flex;align-items:center;margin-top:30px}
@@ -1029,7 +1029,7 @@
 #page_ir #investors-mv .div2 a::after{content:"";width:0;height:0;position:absolute;left:50%;transform:translateX(-50%) translateY(-10px);opacity:0;border-left:4px solid transparent;border-top:6px solid #fff;border-right:4px solid transparent;bottom:-10px;transition:.3s}
 #page_ir #investors-mv .div2 a:hover::after{transform:translateX(-50%) translateY(0);opacity:1}
 #page_ir #investors-mv .group{position:absolute;bottom:60px;left:50%;transform:translateX(-50%);width:1200px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:55px;font-size:var(--font-size-18)}
-#page_ir #investors-mv .frame-parent{width:100%;position:relative;height:782px;text-align:left;font-size:68px;color:var(--color-white);font-family:var(--font-noto-sans-jp);background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/investors/mv-bg.webp) no-repeat;background-size:cover;display:flex;justify-content:center;align-items:center}
+#page_ir #investors-mv .frame-parent{width:100%;position:relative;height:782px;text-align:left;font-size:68px;color:var(--color-white);font-family:var(--font-noto-sans-jp);background:url(/asset/img/ir/investors/mv-bg.webp) no-repeat;background-size:cover;display:flex;justify-content:center;align-items:center}
 #page_ir #page-investors{font-size:16px;color:#000;font-family:var(--font-noto-sans-jp);letter-spacing:.08em}
 #page_ir #page-investors .btn01{position:relative;display:inline-block;min-width:25rem;border-radius:9rem;background:#fafafa;font-size:14px;padding:1.5rem 7rem 1.5rem 8rem;color:#005bac;border:solid 2px #005baa;font-weight:600;letter-spacing:.05em;transition:.3s}
 #page_ir #page-investors .btn01 i{position:absolute;top:0;bottom:0;left:3rem;z-index:10;margin:auto;width:.6rem;height:.6rem;background:#005bac;border-radius:9rem;transition:.3s}
@@ -1515,7 +1515,7 @@ html #page_ir #index_pickup .row div.document .eir ul li:before{display:none}
 #page_company #hub .tel-box{padding:15px}
 #page_company #hub .tel-box em{font-size:1.6rem;margin-bottom:5px}
 #page_company #hub .tel-box .tel{padding-left:40px;font-size:3rem}
-#page_company #hub .tel-box .tel::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img//company/hub/tel-icon-blue.png) no-repeat center;width:32px;height:32px;background-size:contain}
+#page_company #hub .tel-box .tel::before{background:url(/asset/img//company/hub/tel-icon-blue.png) no-repeat center;width:32px;height:32px;background-size:contain}
 #page_company #protection .box{margin-top:20px}
 #page_company #protection .box dl dt{font-size:1.6rem}
 #page_company #chart-skill div.table-cover.slill-detail{width:100%}
@@ -1529,7 +1529,7 @@ html #page_ir #index_pickup .row div.document .eir ul li:before{display:none}
 #page_ir #director_skill div.table-cover.slill-detail .sp{display:block}
 #page_ir #director_skill div.table-cover.slill-detail .inner{width:100%;overflow-x:auto}
 .column_main{overflow:hidden}
-#page_ir #index_main-img .wrapper{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/main-img_bg_sp02.webp) no-repeat center bottom;height:auto;padding:50px 0 347px}
+#page_ir #index_main-img .wrapper{background:url(/asset/img/ir/main-img_bg_sp02.webp) no-repeat center bottom;height:auto;padding:50px 0 347px}
 #page_ir #index_main-img .wrapper .logo.--02{height:8%;top:20%;left:6%}
 #page_ir #index_main-img .wrapper .logo.--05{height:21%;top:75%;left:37%}
 #page_ir #index_main-img .wrapper .text-01.--01{height:35%;top:30%;left:7%;max-width:initial;width:146vw}
@@ -1561,7 +1561,7 @@ html #page_ir #index_pickup .row div.document .eir ul li:before{display:none}
 #page_ir #index_pickup .row>*{width:100%;padding:20px 0 0 0}
 #page_ir #index_pickup .row div.w50{width:100%}
 #page_ir #index_pickup .row div .inner,#page_ir #index_pickup .row div>a{height:200px;border-radius:20px}
-#page_ir #index_pickup .row div .inner.message,#page_ir #index_pickup .row div>a.message{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/pickup_message_sp.jpg) no-repeat center}
+#page_ir #index_pickup .row div .inner.message,#page_ir #index_pickup .row div>a.message{background:url(/asset/img/ir/pickup_message_sp.jpg) no-repeat center}
 #page_ir #index_pickup .row div .link-txt{font-size:1.8rem}
 #page_ir #index_pickup .row div .link-txt:before{width:37px;height:37px;background-size:19px}
 #page_ir #index_news{padding:80px 0}
@@ -1591,7 +1591,7 @@ html #page_ir #index_pickup .row div.document .eir ul li:before{display:none}
 #page_ir #topics .m_box_fixed .topics_inner .link-parent .link .frame-container .background-parent .time-202508081{font-size:12px}
 #page_ir #topics .m_box_fixed .topics_inner .link-parent .link .frame-container .wrapper .div2{font-size:14px;height:3.2em}
 #page_ir #investors{padding-top:0}
-#page_ir #investors .rectangle-parent{background-image:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/investors-sec-bg-sp.webp)}
+#page_ir #investors .rectangle-parent{background-image:url(/asset/img/ir/investors-sec-bg-sp.webp)}
 #page_ir #investors .rectangle-parent .frame-child{width:100%;height:100%}
 #page_ir #investors .rectangle-parent .frame-wrapper{width:100%;padding:0 20px}
 #page_ir #investors .rectangle-parent .frame-wrapper .frame-parent{width:100%}

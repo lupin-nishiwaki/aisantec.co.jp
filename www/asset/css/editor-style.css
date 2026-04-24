@@ -73,7 +73,7 @@ button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]
 #tinymce p strong,.m_cms_wysiwyg p strong{font-weight:700!important}
 #tinymce a,.m_cms_wysiwyg a{text-decoration:underline;transition:all .3s;color:#333}
 #tinymce a:hover,.m_cms_wysiwyg a:hover{opacity:.6}
-#tinymce a[target=_blank]:after,.m_cms_wysiwyg a[target=_blank]:after{content:'';display:inline-block;position:relative;width:10px;height:10px;margin:0 7px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_bk.svg) no-repeat center;background-size:10px}
+#tinymce a[target=_blank]:after,.m_cms_wysiwyg a[target=_blank]:after{content:'';display:inline-block;position:relative;width:10px;height:10px;margin:0 7px;background:url(/asset/img/i_blank_bk.svg) no-repeat center;background-size:10px}
 #tinymce img,.m_cms_wysiwyg img{display:block;height:auto;max-width:100%}
 #tinymce img.alignleft,#tinymce img.alignright,.m_cms_wysiwyg img.alignleft,.m_cms_wysiwyg img.alignright{width:375px}
 #tinymce .aligncenter,.m_cms_wysiwyg .aligncenter{margin:0 auto}
