@@ -3,6 +3,7 @@
 const rootDir = 'www/';
 const srcDir = 'www/_src/';
 const destDir = 'www/asset/';
+const destDir02 = 'www/static/asset/';
 
 // * ----------------------------------------
 // * プラグイン
@@ -69,6 +70,7 @@ const dartSass = () => {
     .pipe(cleanCSS({ format: 'keep-breaks' }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(destDir + 'css/'))
+    .pipe(gulp.dest(destDir02 + 'css/'))
     .pipe(browserSync.stream());
 };
 
@@ -81,6 +83,7 @@ const jsVender = () => {
     .pipe(concat('vender.js'))
     .pipe(uglify())
     .pipe(gulp.dest(destDir + 'js/'))
+    .pipe(gulp.dest(destDir02 + 'js/'))
     .pipe(browserSync.stream());
 };
 
@@ -90,6 +93,7 @@ const jsApp = () => {
     .pipe(plumber())
     .pipe(concat('app.js'))
     .pipe(gulp.dest(destDir + 'js/'))
+    .pipe(gulp.dest(destDir02 + 'js/'))
     .pipe(browserSync.stream());
 };
 
@@ -116,23 +120,26 @@ const img = () => {
       })
     )
     .pipe(gulp.dest(destDir + 'img/'));
+    .pipe(gulp.dest(destDir02 + 'img/'));
 
-  // svg → svg（最適化のみ）
-  const svg = gulp
-    .src(srcDir + 'img/**/*.svg')
-    .pipe(plumber())
-    .pipe(imagemin([imagemin.svgo()]))
-    .pipe(gulp.dest(destDir + 'img/'));
+// svg → svg（最適化のみ）
+const svg = gulp
+  .src(srcDir + 'img/**/*.svg')
+  .pipe(plumber())
+  .pipe(imagemin([imagemin.svgo()]))
+  .pipe(gulp.dest(destDir + 'img/'));
+    .pipe(gulp.dest(destDir02 + 'img/'));
 
-  // ico → ico（そのままコピー）
-  const ico = gulp
-    .src(srcDir + 'img/**/*.ico')
-    .pipe(plumber())
-    .pipe(gulp.dest(destDir + 'img/'));
+// ico → ico（そのままコピー）
+const ico = gulp
+  .src(srcDir + 'img/**/*.ico')
+  .pipe(plumber())
+  .pipe(gulp.dest(destDir + 'img/'));
+    .pipe(gulp.dest(destDir02 + 'img/'));
 
-  return Promise.all([raster, svg, ico]).then(() => {
-    browserSync.stream();
-  });
+return Promise.all([raster, svg, ico]).then(() => {
+  browserSync.stream();
+});
 };
 
 
@@ -145,6 +152,7 @@ const doc = () => {
     .pipe(changed(destDir + 'doc/'))
     .pipe(cache('doc'))
     .pipe(gulp.dest(destDir + 'doc/'))
+    .pipe(gulp.dest(destDir02 + 'doc/'))
     .pipe(browserSync.stream());
 };
 
@@ -154,6 +162,7 @@ const video = () => {
     .pipe(changed(destDir + 'video/'))
     .pipe(cache('video'))
     .pipe(gulp.dest(destDir + 'video/'))
+    .pipe(gulp.dest(destDir02 + 'video/'))
     .pipe(browserSync.stream());
 };
 
@@ -163,6 +172,7 @@ const audio = () => {
     .pipe(changed(destDir + 'audio/'))
     .pipe(cache('audio'))
     .pipe(gulp.dest(destDir + 'audio/'))
+    .pipe(gulp.dest(destDir02 + 'audio/'))
     .pipe(browserSync.stream());
 };
 
