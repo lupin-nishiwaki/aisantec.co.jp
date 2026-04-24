@@ -119,27 +119,27 @@ const img = () => {
         method: 6,
       })
     )
-    .pipe(gulp.dest(destDir + 'img/'));
+    .pipe(gulp.dest(destDir + 'img/'))
     .pipe(gulp.dest(destDir02 + 'img/'));
 
-// svg → svg（最適化のみ）
-const svg = gulp
-  .src(srcDir + 'img/**/*.svg')
-  .pipe(plumber())
-  .pipe(imagemin([imagemin.svgo()]))
-  .pipe(gulp.dest(destDir + 'img/'));
+  // svg → svg（最適化のみ）
+  const svg = gulp
+    .src(srcDir + 'img/**/*.svg')
+    .pipe(plumber())
+    .pipe(imagemin([imagemin.svgo()]))
+    .pipe(gulp.dest(destDir + 'img/'))
     .pipe(gulp.dest(destDir02 + 'img/'));
 
-// ico → ico（そのままコピー）
-const ico = gulp
-  .src(srcDir + 'img/**/*.ico')
-  .pipe(plumber())
-  .pipe(gulp.dest(destDir + 'img/'));
+  // ico → ico（そのままコピー）
+  const ico = gulp
+    .src(srcDir + 'img/**/*.ico')
+    .pipe(plumber())
+    .pipe(gulp.dest(destDir + 'img/'))
     .pipe(gulp.dest(destDir02 + 'img/'));
 
-return Promise.all([raster, svg, ico]).then(() => {
-  browserSync.stream();
-});
+  return Promise.all([raster, svg, ico]).then(() => {
+    browserSync.stream();
+  });
 };
 
 
