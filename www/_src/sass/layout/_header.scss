@@ -129,10 +129,15 @@ html.is-fixed body {
       ul {
         display: flex;
         align-items: center;
+        margin-right: 20px;
+
+        @media #{$breakM} {
+          margin: 0;
+        }
 
         li {
           @media #{$breakM} {
-            width: 50%;
+            width: 100%;
           }
 
           &.contact {

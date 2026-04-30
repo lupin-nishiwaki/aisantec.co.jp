@@ -1412,6 +1412,44 @@ html .eir_area_area_meeting_011 .s_eirBlock dl dd{width:calc(100% - 200px)}
 html #page_ir #index_pickup .row .eir div>a{display:inline;position:relative;height:auto;border-radius:6px;overflow:hidden;background-size:cover!important}
 html #page_ir #index_pickup .row .eir div>a:before{display:none}
 html #page_ir #index_pickup .row div.document .eir ul li:before{display:none}
+#page_privacy #anker ul{display:flex;flex-wrap:wrap;margin:0 0 0 -20px}
+#page_privacy #anker ul>*{width:50%;padding:0 0 0 20px}
+#page_privacy #anker ul li a{position:relative;display:block;padding:15px 0;border-bottom:1px solid #ddd}
+#page_privacy #anker ul li a:after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:5px;width:18px;height:18px;background:url(/asset/img/i_arr.svg) no-repeat center;transform:rotate(90deg)}
+#page_privacy #privacy01 .box,#page_privacy #privacy02 .box,#page_privacy #privacy03 .box,#page_privacy #privacy04 .box,#page_privacy #privacy05 .box,#page_privacy #privacy06 .box,#page_privacy #privacy07 .box,#page_privacy #privacy08 .box,#page_privacy #privacy09 .box{margin-top:30px}
+#page_privacy #privacy01 h3,#page_privacy #privacy02 h3,#page_privacy #privacy03 h3,#page_privacy #privacy04 h3,#page_privacy #privacy05 h3,#page_privacy #privacy06 h3,#page_privacy #privacy07 h3,#page_privacy #privacy08 h3,#page_privacy #privacy09 h3{font-weight:700;margin-bottom:10px;font-size:20px}
+#page_privacy #privacy01 .u_h4,#page_privacy #privacy02 .u_h4,#page_privacy #privacy03 .u_h4,#page_privacy #privacy04 .u_h4,#page_privacy #privacy05 .u_h4,#page_privacy #privacy06 .u_h4,#page_privacy #privacy07 .u_h4,#page_privacy #privacy08 .u_h4,#page_privacy #privacy09 .u_h4{font-weight:700;font-size:1.8rem;margin:20px 0 10px}
+#page_privacy #privacy01 .u_h5,#page_privacy #privacy02 .u_h5,#page_privacy #privacy03 .u_h5,#page_privacy #privacy04 .u_h5,#page_privacy #privacy05 .u_h5,#page_privacy #privacy06 .u_h5,#page_privacy #privacy07 .u_h5,#page_privacy #privacy08 .u_h5,#page_privacy #privacy09 .u_h5{line-height:2;font-weight:700;background:#ebebeb;padding:3px 10px 1px;margin:20px 0 10px;font-size:1.5rem}
+#page_privacy #privacy01 a,#page_privacy #privacy02 a,#page_privacy #privacy03 a,#page_privacy #privacy04 a,#page_privacy #privacy05 a,#page_privacy #privacy06 a,#page_privacy #privacy07 a,#page_privacy #privacy08 a,#page_privacy #privacy09 a{color:#005bac;text-decoration:underline}
+#page_privacy #privacy01 a[href$=".pdf"]:after,#page_privacy #privacy02 a[href$=".pdf"]:after,#page_privacy #privacy03 a[href$=".pdf"]:after,#page_privacy #privacy04 a[href$=".pdf"]:after,#page_privacy #privacy05 a[href$=".pdf"]:after,#page_privacy #privacy06 a[href$=".pdf"]:after,#page_privacy #privacy07 a[href$=".pdf"]:after,#page_privacy #privacy08 a[href$=".pdf"]:after,#page_privacy #privacy09 a[href$=".pdf"]:after{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-left:5px;background:url(/asset/img/i_document.svg) no-repeat center}
+#page_privacy #privacy01 .u_contact dl,#page_privacy #privacy02 .u_contact dl,#page_privacy #privacy03 .u_contact dl,#page_privacy #privacy04 .u_contact dl,#page_privacy #privacy05 .u_contact dl,#page_privacy #privacy06 .u_contact dl,#page_privacy #privacy07 .u_contact dl,#page_privacy #privacy08 .u_contact dl,#page_privacy #privacy09 .u_contact dl{display:flex}
+#page_privacy #privacy01 .u_contact dl+dl,#page_privacy #privacy02 .u_contact dl+dl,#page_privacy #privacy03 .u_contact dl+dl,#page_privacy #privacy04 .u_contact dl+dl,#page_privacy #privacy05 .u_contact dl+dl,#page_privacy #privacy06 .u_contact dl+dl,#page_privacy #privacy07 .u_contact dl+dl,#page_privacy #privacy08 .u_contact dl+dl,#page_privacy #privacy09 .u_contact dl+dl{margin-top:10px}
+#page_privacy #privacy01 .u_contact dl dt,#page_privacy #privacy02 .u_contact dl dt,#page_privacy #privacy03 .u_contact dl dt,#page_privacy #privacy04 .u_contact dl dt,#page_privacy #privacy05 .u_contact dl dt,#page_privacy #privacy06 .u_contact dl dt,#page_privacy #privacy07 .u_contact dl dt,#page_privacy #privacy08 .u_contact dl dt,#page_privacy #privacy09 .u_contact dl dt{flex-shrink:0;width:100px;font-weight:700}
+#page_privacy #privacy01 .box05 .privacyMark_img{display:flex;align-items:center;margin-bottom:10px}
+#page_privacy #privacy01 .box05 .privacyMark_img img{flex-shrink:0;position:relative;width:76px;margin-right:20px}
+#page_privacy #privacy01 .box05 .privacyMark_img p a{color:#005bac;text-decoration:underline}
+#page_privacy #privacy01 .box05 .privacyMark_img p a:after{content:"";display:inline-block;position:relative;top:3px;width:18px;height:18px;margin-left:5px;background:url(/asset/img/i_blank_blue.svg) no-repeat center}
+#page_privacy #privacy01 .box06 .contact{margin:20px 0}
+#page_privacy #privacy01 .box06 p.kyokai{margin-top:30px}
+#page_privacy #privacy02 .box05 .corner{border:1px solid #ddd;margin-top:15px;padding:30px}
+#page_privacy #privacy02 .box05 .corner .corner_item01 h4{margin-top:0}
+#page_privacy #privacy02 .box05 .corner .corner_item04 ol{margin-top:10px}
+#page_privacy #privacy02 .box05 .corner .corner_item05 dl+dl{margin-top:10px}
+#page_privacy #privacy02 .box05 .corner .corner_item05 dl dt{font-weight:700}
+#page_privacy #privacy02 .box06 ul{margin:10px 0}
+#page_privacy #privacy02 .box06 ul li+li{margin-top:0}
+#page_privacy #privacy02 .box08 .contact{margin-top:20px}
+#page_privacy #privacy03 ul li+li{margin-top:0}
+#page_privacy #privacy05 .box01 p.flow{text-align:center}
+#page_privacy #privacy05 .box03 .contact{margin:20px 0}
+#page_privacy #privacy06 .box02 .corner{border:1px solid #ddd;margin-top:15px;padding:30px}
+#page_privacy #privacy06 .box02 .corner .corner_item01 h5:first-child{margin-top:0}
+#page_privacy #privacy06 .box02 .corner .corner_item01 dl+dl{margin-top:10px}
+#page_privacy #privacy06 .box02 .corner .corner_item01 dl dt{font-weight:700}
+#page_privacy #privacy07 .box02 .corner{border:1px solid #ddd;margin-top:15px;padding:30px}
+#page_privacy #privacy07 .box02 .corner .corner_item01 h5:first-child{margin-top:0}
+#page_privacy #privacy07 .box02 .corner .corner_item01 dl+dl{margin-top:10px}
+#page_privacy #privacy07 .box02 .corner .corner_item01 dl dt{font-weight:700}
 @media screen and (max-width:1400px){
 #page_ir .page-business #business-segment .future_list_03 .detail_item_Ttl h5{font-size:2.2rem}
 }
@@ -2021,6 +2059,20 @@ html .s_eirBoxList_item{width:100%;padding:20px;border-right:#e8e8e8 solid 1px}
 html .s_eirBoxList_item:nth-child(-n+3){border-top:none}
 html .s_eirBoxList_item:first-child{border-top:#e8e8e8 solid 1px}
 html .s_eirBoxList_body_thumbWrap{width:100px}
+#page_privacy #anker ul{display:block;margin:0}
+#page_privacy #anker ul>*{width:100%;padding:0}
+#page_privacy #anker ul li a{padding:15px 30px 15px 0}
+#page_privacy #privacy01 .u_h4,#page_privacy #privacy02 .u_h4,#page_privacy #privacy03 .u_h4,#page_privacy #privacy04 .u_h4,#page_privacy #privacy05 .u_h4,#page_privacy #privacy06 .u_h4,#page_privacy #privacy07 .u_h4,#page_privacy #privacy08 .u_h4,#page_privacy #privacy09 .u_h4{font-size:1.5rem}
+#page_privacy #privacy01 .u_h5,#page_privacy #privacy02 .u_h5,#page_privacy #privacy03 .u_h5,#page_privacy #privacy04 .u_h5,#page_privacy #privacy05 .u_h5,#page_privacy #privacy06 .u_h5,#page_privacy #privacy07 .u_h5,#page_privacy #privacy08 .u_h5,#page_privacy #privacy09 .u_h5{line-height:1.5;padding:7px 10px 8px;font-size:1.3rem}
+#page_privacy #privacy01 a[href$=".pdf"]:after,#page_privacy #privacy02 a[href$=".pdf"]:after,#page_privacy #privacy03 a[href$=".pdf"]:after,#page_privacy #privacy04 a[href$=".pdf"]:after,#page_privacy #privacy05 a[href$=".pdf"]:after,#page_privacy #privacy06 a[href$=".pdf"]:after,#page_privacy #privacy07 a[href$=".pdf"]:after,#page_privacy #privacy08 a[href$=".pdf"]:after,#page_privacy #privacy09 a[href$=".pdf"]:after{top:5px;margin-left:0}
+#page_privacy #privacy01 .u_contact dl+dl,#page_privacy #privacy02 .u_contact dl+dl,#page_privacy #privacy03 .u_contact dl+dl,#page_privacy #privacy04 .u_contact dl+dl,#page_privacy #privacy05 .u_contact dl+dl,#page_privacy #privacy06 .u_contact dl+dl,#page_privacy #privacy07 .u_contact dl+dl,#page_privacy #privacy08 .u_contact dl+dl,#page_privacy #privacy09 .u_contact dl+dl{margin-top:5px}
+#page_privacy #privacy01 .u_contact dl dt,#page_privacy #privacy02 .u_contact dl dt,#page_privacy #privacy03 .u_contact dl dt,#page_privacy #privacy04 .u_contact dl dt,#page_privacy #privacy05 .u_contact dl dt,#page_privacy #privacy06 .u_contact dl dt,#page_privacy #privacy07 .u_contact dl dt,#page_privacy #privacy08 .u_contact dl dt,#page_privacy #privacy09 .u_contact dl dt{width:80px}
+#page_privacy #privacy01 .box05 .privacyMark_img{align-items:flex-start}
+#page_privacy #privacy01 .box05 .privacyMark_img img{top:4px;width:50px}
+#page_privacy #privacy01 .box06 p.kyokai{margin-top:10px}
+#page_privacy #privacy02 .box05 .corner{padding:20px}
+#page_privacy #privacy06 .box02 .corner{padding:20px}
+#page_privacy #privacy07 .box02 .corner{padding:20px}
 }
 @keyframes moveLeft{
 0%{margin-left:20%;opacity:0}

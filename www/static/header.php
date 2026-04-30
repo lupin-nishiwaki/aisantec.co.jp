@@ -66,10 +66,6 @@
           <li class="contact">
             <a href="https://aisantec.form.kintoneapp.com/public/a7449fb50979bebb1da3c12f01ad4a421bb463ec920490722544ff8f79e9a7b9" target="_blank">お問い合わせ</a>
           </li>
-
-          <li class="language">
-            <a href="https://www.aisantec.co.jp/english/">ENGLISH</a>
-          </li>
         </ul>
 
         <form method="get" action="https://www.aisantec.co.jp/cgi-bin/pcms/mt-search.cgi" _lpchecked="1">
@@ -111,9 +107,9 @@
                           <li><a href="/ir/management/business/">事業概要</a></li>
                           <li><a href="/ir/management/sustainability/">サステナビリティ</a></li>
                           <li><a href="/ir/management/disclosure/">IR・ディスクロージャーポリシー</a></li>
-                          <li><a href="/ir/management/capital-costs-stock-prices/">資本コストや株価を意識した経営</a></li><!--  //2024-04-28 更新 -->
+                          <li><a href="/ir/management/capital-costs-stock-prices/">資本コストや株価を意識した経営</a></li>
                           <li><a href="/ir/management/human-management/">人的資本経営</a></li>
-                          <li><a href="/ir/management/dx-strategy/">DX戦略</a></li><!--  //2024-04-28 更新 -->
+                          <li><a href="/ir/management/dx-strategy/">DX戦略</a></li>
                           <li><a href="/ir/management/business-model/">事業別収益モデル</a></li>
                         </ul>
                       </dd>
@@ -139,20 +135,6 @@
                     </dl>
                   </div>
 
-                  <!-- <div>
-                    <dl class="sec">
-                      <dt><a href="/ir/information/">ニュース一覧</a><i></i></dt>
-                      <dd>
-                        <ul>
-                          <li><a href="/ir/information/">お知らせ一覧</a></li>
-                          <li><a href="/ir/information/">決算・適時開示</a></li>
-                          <li><a href="/ir/information/">IR資料</a></li>
-                          <li><a href="/ir/information/">お知らせ</a></li>
-                        </ul>
-                      </dd>
-                    </dl>
-                  </div> -->
-
                   <div>
                     <dl class="sec">
                       <dt><a href="/ir/investors/">株主・個人投資家の皆様へ</a><i></i></dt>
@@ -176,10 +158,8 @@
                       <dd>
                         <ul>
                           <li><a href="/ir/library/report-brief/">決算短信・決算説明資料</a></li>
-                          <!-- <li><a href="/ir/library/report-corporate/">コーポレートレポート</a></li> -->
                           <li><a href="/ir/library/report-securities/">有価証券報告書</a></li>
                           <li><a href="/ir/library/sessionsettlement/">会社説明会・決算説明会</a></li>
-                          <!-- <li><a href="/ir/library/sessioncompany/">会社説明会</a></li> -->
                           <li><a href="/ir/library/report/">その他資料</a></li>
                         </ul>
                       </dd>
@@ -256,7 +236,9 @@
           </dl>
         </li>
 
-        <li class="recruit"><a href="https://at-recruit.jp/" target="_blank">採用情報</a></li>
+        <li class="recruit">
+          <a href="https://at-recruit.jp/" target="_blank">採用情報</a>
+        </li>
       </ul>
     </nav>
 

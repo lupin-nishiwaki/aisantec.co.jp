@@ -14,6 +14,10 @@
           padding: 15px 0;
           border-bottom: 1px solid $colorGray;
 
+          @media #{$breakS} {
+            padding: 15px 30px 15px 0;
+          }
+
           &:after {
             @include icoPosition();
             top: 0;
@@ -38,121 +42,276 @@
   #privacy07,
   #privacy08,
   #privacy09 {
+    .box {
+      margin-top: 30px;
+    }
+
     h3 {
       font-weight: $fontBold;
-      margin: 30px 0 10px;
+      margin-bottom: 10px;
       font-size: 20px;
+    }
+
+    .u_h4 {
+      font-weight: $fontBold;
+      font-size: 1.8rem;
+      margin: 20px 0 10px;
+
+      @media #{$breakS} {
+        font-size: 1.5rem;
+      }
+    }
+
+    .u_h5 {
+      line-height: 2;
+      font-weight: $fontBold;
+      background: $colorLightGray;
+      padding: 3px 10px 1px;
+      margin: 20px 0 10px;
+      font-size: 1.5rem;
+
+      @media #{$breakS} {
+        line-height: 1.5;
+        padding: 7px 10px 8px;
+        font-size: 1.3rem;
+      }
+    }
+
+    a {
+      color: $colorMain;
+      text-decoration: underline;
+
+      &[href$=".pdf"] {
+        &:after {
+          @include icoInline();
+          top: 3px;
+          width: 18px;
+          height: 18px;
+          margin-left: 5px;
+          background: url('#{$imgPath}i_document.svg') no-repeat center;
+
+          @media #{$breakS} {
+            top: 5px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .u_contact {
+      dl {
+        display: flex;
+
+        &+dl {
+          margin-top: 10px;
+
+          @media #{$breakS} {
+            margin-top: 5px;
+          }
+        }
+
+        dt {
+          flex-shrink: 0;
+          width: 100px;
+          font-weight: $fontBold;
+
+          @media #{$breakS} {
+            width: 80px;
+          }
+        }
+      }
     }
   }
 
   #privacy01 {
     .box05 {
-      .privacyMark {
-        .privacyMark_img {
-          display: flex;
-          align-items: center;
-          margin-bottom: 10px;
+      .privacyMark_img {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
 
-          img {
-            flex-shrink: 0;
-            width: 76px;
-            margin-right: 20px;
+        @media #{$breakS} {
+          align-items: flex-start;
+        }
+
+        img {
+          flex-shrink: 0;
+          position: relative;
+          width: 76px;
+          margin-right: 20px;
+
+          @media #{$breakS} {
+            top: 4px;
+            width: 50px;
           }
+        }
 
-          p {
-            a {
-              color: $colorMain;
-              text-decoration: underline;
+        p {
+          a {
+            color: $colorMain;
+            text-decoration: underline;
 
-              &:after {
-                @include icoInline();
-                top: 3px;
-                width: 18px;
-                height: 18px;
-                margin-left: 5px;
-                background: url('#{$imgPath}i_blank_blue.svg') no-repeat center;
-              }
+            &:after {
+              @include icoInline();
+              top: 3px;
+              width: 18px;
+              height: 18px;
+              margin-left: 5px;
+              background: url('#{$imgPath}i_blank_blue.svg') no-repeat center;
             }
           }
         }
       }
+    }
 
+    .box06 {
       .contact {
         margin: 20px 0;
-
-        dl {
-          display: flex;
-
-          &+dl {
-            margin-top: 10px;
-          }
-
-          dt {
-            flex-shrink: 0;
-            width: 100px;
-            font-weight: $fontBold;
-          }
-        }
       }
 
       p.kyokai {
         margin-top: 30px;
+
+        @media #{$breakS} {
+          margin-top: 10px;
+        }
       }
     }
   }
 
   #privacy02 {
-    .box03 {
-      .company {
-        margin-top: 15px;
-      }
-    }
-
     .box05 {
-      .address {
+      .corner {
         border: 1px solid $colorGray;
         margin-top: 15px;
         padding: 30px;
 
-        h4 {
-          font-weight: $fontBold;
-          font-size: 18px;
-          margin-bottom: 10px;
+        @media #{$breakS} {
+          padding: 20px;
+        }
 
-          &:first-child {
+        .corner_item01 {
+          h4 {
             margin-top: 0;
           }
         }
 
-        .address02,
-        .address03,
-        .address04,
-        .address05 {
-          margin-top: 30px;
+        .corner_item04 {
+          ol {
+            margin-top: 10px;
+          }
         }
 
-        .address02 {
+        .corner_item05 {
           dl {
             &+dl {
               margin-top: 10px;
             }
 
-            dd {
-              a {
-                color: $colorMain;
-                text-decoration: underline;
+            dt {
+              font-weight: $fontBold;
+            }
+          }
+        }
+      }
+    }
 
-                &[target="_blank"] {
-                  &:after {
-                    @include icoInline();
-                    top: 3px;
-                    width: 18px;
-                    height: 18px;
-                    margin-left: 5px;
-                    background: url('#{$imgPath}i_document.svg') no-repeat center;
-                  }
-                }
-              }
+    .box06 {
+      ul {
+        margin: 10px 0;
+
+        li {
+          &+li {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+    .box08 {
+      .contact {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  #privacy03 {
+    ul {
+      li {
+        &+li {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  #privacy05 {
+    .box01 {
+      p.flow {
+        text-align: center;
+      }
+    }
+
+    .box03 {
+      .contact {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  #privacy06 {
+    .box02 {
+      .corner {
+        border: 1px solid $colorGray;
+        margin-top: 15px;
+        padding: 30px;
+
+        @media #{$breakS} {
+          padding: 20px;
+        }
+
+        .corner_item01 {
+          h5:first-child {
+            margin-top: 0;
+          }
+
+          dl {
+            &+dl {
+              margin-top: 10px;
+            }
+
+            dt {
+              font-weight: $fontBold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #privacy07 {
+    .box02 {
+      .corner {
+        border: 1px solid $colorGray;
+        margin-top: 15px;
+        padding: 30px;
+
+        @media #{$breakS} {
+          padding: 20px;
+        }
+
+        .corner_item01 {
+          h5:first-child {
+            margin-top: 0;
+          }
+
+          dl {
+            &+dl {
+              margin-top: 10px;
+            }
+
+            dt {
+              font-weight: $fontBold;
             }
           }
         }

@@ -38,7 +38,7 @@
 
     &:before {
       @include icoPosition();
-      top: 10px;
+      top: .8em;
       left: 0;
       width: 4px;
       height: 4px;
@@ -46,8 +46,26 @@
       background: $colorBlack;
 
       @media #{$breakS} {
-        top: 8px;
+        top: .6em;
       }
+    }
+  }
+}
+
+.m_list_notes {
+  li {
+    position: relative;
+    padding-left: 1.5em;
+
+    &:before {
+      @include icoPosition();
+      content: "※";
+      top: 0;
+      left: 0;
+    }
+
+    &+li {
+      margin-top: 8px;
     }
   }
 }

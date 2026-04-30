@@ -128,7 +128,10 @@ button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]
 .m_list_no li:before{counter-increment:no;content:counter(no) '.';position:absolute;top:0;left:0}
 .m_list_dot li{position:relative;padding-left:1em}
 .m_list_dot li+li{margin-top:8px}
-.m_list_dot li:before{content:'';position:absolute;margin:auto;top:10px;left:0;width:4px;height:4px;border-radius:50%;background:#333}
+.m_list_dot li:before{content:'';position:absolute;margin:auto;top:.8em;left:0;width:4px;height:4px;border-radius:50%;background:#333}
+.m_list_notes li{position:relative;padding-left:1.5em}
+.m_list_notes li:before{content:'';position:absolute;margin:auto;content:'※';top:0;left:0}
+.m_list_notes li+li{margin-top:8px}
 .m_list_document li+li{margin-top:8px}
 .m_list_document li a{position:relative;display:inline-block;padding:0 0 0 18px;color:#005bac}
 .m_list_document li a:before{content:'';position:absolute;margin:auto;top:7px;left:0;width:14px;height:14px;background:url(/asset/img/i_arr.svg) no-repeat center;background-size:14px}
@@ -401,7 +404,7 @@ button,input,select,textarea{font-size:1.3rem;line-height:1.8}
 .m_cms_wysiwyg .gallery-columns-9 .gallery-item{width:50%}
 .m_cms_wysiwyg iframe{height:210px}
 .m_list_dot li{line-height:1.6}
-.m_list_dot li:before{top:8px}
+.m_list_dot li:before{top:.6em}
 .m_list_document li a{padding:0 0 0 15px;line-height:1.6}
 .m_list_document li a:before{top:3px}
 .m_list_document li a:after{top:2px}

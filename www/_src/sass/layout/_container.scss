@@ -191,6 +191,63 @@
             }
           }
 
+          ul {
+            li {
+              &+li {
+                margin-top: 3px;
+              }
+
+              &.cur {
+                a {
+                  background: $colorMain;
+                  color: $colorWhite;
+
+                  &:after {
+                    background: url("#{$imgPath}i_arr_wh.svg") no-repeat center;
+                  }
+                }
+              }
+
+              a {
+                position: relative;
+                display: block;
+                background: $colorLightBlue;
+                padding: 6px 18px;
+                border-radius: 4px;
+
+                @media #{$breakM} {
+                  background: $colorWhite;
+                }
+
+                &:after {
+                  @include icoPosition;
+                  top: 0;
+                  bottom: 0;
+                  right: 0;
+                  width: 40px;
+                  height: 36px;
+                  background: url("#{$imgPath}i_arr_bk.svg") no-repeat center;
+                  background-size: 14px !important;
+                }
+
+                &[target="_blank"]::before {
+                  content: "";
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto 0;
+                  left: 75px;
+                  width: 15px;
+                  height: 15px;
+                  margin-left: 2px;
+                  background: url("#{$imgPath}i_blank_bk.svg") no-repeat center !important;
+                  background-size: 15px auto;
+                }
+              }
+            }
+          }
+
           dl {
             &:last-child {
               border-bottom: 1px solid $colorGray;
@@ -240,63 +297,6 @@
               display: none;
               font-size: 1.2rem;
               padding-bottom: 20px;
-
-              ul {
-                li {
-                  &+li {
-                    margin-top: 3px;
-                  }
-
-                  &.cur {
-                    a {
-                      background: $colorMain;
-                      color: $colorWhite;
-
-                      &:after {
-                        background: url("#{$imgPath}i_arr_wh.svg") no-repeat center;
-                      }
-                    }
-                  }
-
-                  a {
-                    position: relative;
-                    display: block;
-                    background: $colorLightBlue;
-                    padding: 6px 18px;
-                    border-radius: 4px;
-
-                    @media #{$breakM} {
-                      background: $colorWhite;
-                    }
-
-                    &:after {
-                      @include icoPosition;
-                      top: 0;
-                      bottom: 0;
-                      right: 0;
-                      width: 40px;
-                      height: 36px;
-                      background: url("#{$imgPath}i_arr_bk.svg") no-repeat center;
-                      background-size: 14px !important;
-                    }
-
-                    &[target="_blank"]::before {
-                      content: "";
-                      display: inline-block;
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      margin: auto 0;
-                      left: 75px;
-                      width: 15px;
-                      height: 15px;
-                      margin-left: 2px;
-                      background: url("#{$imgPath}i_blank_bk.svg") no-repeat center !important;
-                      background-size: 15px auto;
-                    }
-                  }
-                }
-              }
             }
           }
 
