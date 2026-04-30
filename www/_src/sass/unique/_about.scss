@@ -1,0 +1,11 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+#page_about {
+  #about {
+    h2 {
+      margin-top: 30px;
+    }
+  }
+}

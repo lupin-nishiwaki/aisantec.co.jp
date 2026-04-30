@@ -22,7 +22,7 @@
         </section>
         <!-- /#page-title -->
 
-        <!-- #privacy0nker -->
+        <!-- #anker -->
         <section id="anker">
           <ul>
             <li><a href="#privacy01">アイサンテクノロジーの個人情報保護方針について</a></li>
@@ -36,7 +36,7 @@
             <li><a href="#privacy09">株主様の個人情報について</a></li>
           </ul>
         </section>
-        <!-- /#privacy0nker -->
+        <!-- /#anker -->
 
         <!-- #privacy01 -->
         <section id="privacy01">
