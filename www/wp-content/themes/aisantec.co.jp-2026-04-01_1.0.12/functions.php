@@ -4,13 +4,13 @@
   アップデートの非表示
 ======================================*/
 // 本体の更新通知を非表示
-add_filter( 'pre_site_transient_update_core', '__return_null' );
-// プラグインの更新通知を非表示
-add_filter( 'pre_site_transient_update_plugins', '__return_null' );
-// テーマの更新通知を非表示
-add_filter( 'pre_site_transient_update_themes', '__return_null' );
-//自動更新を無効にする
-add_filter( 'automatic_updater_disabled', '__return_true' );
+// add_filter( 'pre_site_transient_update_core', '__return_null' );
+// // プラグインの更新通知を非表示
+// add_filter( 'pre_site_transient_update_plugins', '__return_null' );
+// // テーマの更新通知を非表示
+// add_filter( 'pre_site_transient_update_themes', '__return_null' );
+// //自動更新を無効にする
+// add_filter( 'automatic_updater_disabled', '__return_true' );
 
 /*======================================
   コンテンツ幅
@@ -142,7 +142,7 @@ function admin_post_type() {
             $subject = $redirect_url;
             $pattern = '/\/page\//'; // URLに「/page/」があるかチェック
             preg_match($pattern, $subject, $matches);
-  
+
             if ($matches){
             //リクエストURLに「/page/」があれば、リダイレクトしない。
             $redirect_url = false;
@@ -150,5 +150,5 @@ function admin_post_type() {
             }
         }
     }
-    
+
 ?>

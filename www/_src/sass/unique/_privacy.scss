@@ -1,0 +1,162 @@
+@use "sass:math";
+@use "../core/setting" as *;
+@use "../core/mixin" as *;
+
+#page_privacy {
+  #anker {
+    ul {
+      @include boxRow(2, 0, 20px, 0);
+
+      li {
+        a {
+          position: relative;
+          display: block;
+          padding: 15px 0;
+          border-bottom: 1px solid $colorGray;
+
+          &:after {
+            @include icoPosition();
+            top: 0;
+            bottom: 0;
+            right: 5px;
+            width: 18px;
+            height: 18px;
+            background: url('#{$imgPath}i_arr.svg') no-repeat center;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+
+  #privacy01,
+  #privacy02,
+  #privacy03,
+  #privacy04,
+  #privacy05,
+  #privacy06,
+  #privacy07,
+  #privacy08,
+  #privacy09 {
+    h3 {
+      font-weight: $fontBold;
+      margin: 30px 0 10px;
+      font-size: 20px;
+    }
+  }
+
+  #privacy01 {
+    .box05 {
+      .privacyMark {
+        .privacyMark_img {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          img {
+            flex-shrink: 0;
+            width: 76px;
+            margin-right: 20px;
+          }
+
+          p {
+            a {
+              color: $colorMain;
+              text-decoration: underline;
+
+              &:after {
+                @include icoInline();
+                top: 3px;
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+                background: url('#{$imgPath}i_blank_blue.svg') no-repeat center;
+              }
+            }
+          }
+        }
+      }
+
+      .contact {
+        margin: 20px 0;
+
+        dl {
+          display: flex;
+
+          &+dl {
+            margin-top: 10px;
+          }
+
+          dt {
+            flex-shrink: 0;
+            width: 100px;
+            font-weight: $fontBold;
+          }
+        }
+      }
+
+      p.kyokai {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #privacy02 {
+    .box03 {
+      .company {
+        margin-top: 15px;
+      }
+    }
+
+    .box05 {
+      .address {
+        border: 1px solid $colorGray;
+        margin-top: 15px;
+        padding: 30px;
+
+        h4 {
+          font-weight: $fontBold;
+          font-size: 18px;
+          margin-bottom: 10px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        .address02,
+        .address03,
+        .address04,
+        .address05 {
+          margin-top: 30px;
+        }
+
+        .address02 {
+          dl {
+            &+dl {
+              margin-top: 10px;
+            }
+
+            dd {
+              a {
+                color: $colorMain;
+                text-decoration: underline;
+
+                &[target="_blank"] {
+                  &:after {
+                    @include icoInline();
+                    top: 3px;
+                    width: 18px;
+                    height: 18px;
+                    margin-left: 5px;
+                    background: url('#{$imgPath}i_document.svg') no-repeat center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
