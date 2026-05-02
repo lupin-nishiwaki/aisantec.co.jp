@@ -4,7 +4,6 @@
 
 
 :root {
-
   /* Color */
   --color-white: #fff;
   --color-darkslategray: #333;
@@ -49,12 +48,9 @@
   @media #{$breakS} {
     overflow: hidden;
   }
-
 }
 
-
 #page_ir {
-
   #column2 {
     overflow: hidden;
   }
@@ -85,7 +81,7 @@
       left: 0;
       width: 14px;
       height: 14px;
-      background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr.svg) no-repeat center;
+      background: url(/asset/img/i_arr.svg) no-repeat center;
       background-size: 14px;
 
     }
@@ -112,13 +108,13 @@
       }
 
       .logo {
-        &.--01 {
+        &.--logo01 {
           height: 13%;
           top: 8%;
           left: 38%;
         }
 
-        &.--02 {
+        &.--logo02 {
           height: 8%;
           top: 11%;
           left: 6%;
@@ -130,19 +126,19 @@
           }
         }
 
-        &.--03 {
+        &.--logo03 {
           height: 10%;
           top: 56%;
           left: 2%;
         }
 
-        &.--04 {
+        &.--logo04 {
           height: 8%;
           top: 35%;
           left: 48%;
         }
 
-        &.--05 {
+        &.--logo05 {
           height: 21%;
           top: 65%;
           left: 37%;
@@ -154,19 +150,19 @@
           }
         }
 
-        &.--06 {
+        &.--logo06 {
           height: 12%;
           top: 80%;
           left: 67%;
         }
 
-        &.--07 {
+        &.--logo07 {
           height: 11%;
           top: 57%;
           left: 84%;
         }
 
-        &.--08 {
+        &.--logo08 {
           height: 20%;
           top: 21%;
           left: 90%;
@@ -174,7 +170,7 @@
       }
 
       .text-01 {
-        &.--01 {
+        &.--text01 {
           height: 16%;
           top: 40%;
           left: 7%;
@@ -217,7 +213,7 @@
           }
         }
 
-        &.--01-02 {
+        &.--text01-02 {
           height: 16%;
           top: 40%;
           left: 140%;
@@ -260,20 +256,20 @@
           }
         }
 
-        &.--02 {
+        &.--text02 {
           height: 8%;
           top: 23%;
           left: 12%;
         }
 
-        &.--03 {
+        &.--text03 {
           height: 10%;
           top: 63%;
           left: 47%;
 
         }
 
-        &.--04 {
+        &.--text04 {
           height: 10%;
           top: 87%;
           left: 9%;
@@ -281,14 +277,14 @@
       }
 
       .text-02 {
-        &.--01 {
+        &.--text01 {
           height: 12%;
           top: 7%;
           left: 63%;
 
         }
 
-        &.--02 {
+        &.--text02 {
           height: 7%;
           top: 60%;
           left: 13%;
@@ -300,13 +296,13 @@
           }
         }
 
-        &.--03 {
+        &.--text03 {
           height: 6%;
           top: 76%;
           left: 3%;
         }
 
-        &.--04 {
+        &.--text04 {
           height: 9%;
           top: 81%;
           left: 86%;
@@ -399,8 +395,6 @@
     }
   }
 
-  //
-
   #page-title02 {
     margin-bottom: 60px;
 
@@ -488,7 +482,7 @@
           opacity: 1;
 
           &::before {
-            background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg) no-repeat center;
+            background: url(/asset/img/i_arr02_wh.svg) no-repeat center;
           }
         }
 
@@ -503,80 +497,82 @@
 
   }
 
-
   #index_essential {
     padding: 0;
     overflow: hidden;
+    background: #005bac;
 
     * {
       color: $colorWhite;
     }
 
-    .slick-slide {
-      border: none;
+    .wrap {
+      display: flex;
+      column-gap: 20px;
+
+      @media #{$breakM} {
+        display: block;
+        padding: 0;
+      }
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      width: 250px;
+      height: 67px;
+      padding-top: 19px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+
+      @media #{$breakM} {
+        padding-top: 30px;
+        height: 91px;
+      }
+
+      @media #{$breakS} {
+        width: 100%;
+        height: auto;
+        display: block;
+        border: none;
+        padding: 5px 0 10px 13px;
+        text-align: left;
+      }
+
+      &:before {
+        @include icoInline();
+        top: 5px;
+        width: 22px;
+        height: 22px;
+        margin-right: 5px;
+        background: url("#{$imgPath}i_caution_wh.svg") no-repeat center;
+      }
     }
 
     .slide {
       flex-basis: auto;
       width: 100%;
 
-      @media #{$breakS} {
-        padding: 0;
-      }
-
       .item {
-        .wrap {
-          position: relative;
-          padding: 15px 0 15px 280px;
+        padding-right: 100px;
 
-          @media #{$breakS} {
-            padding: 57px 15px 15px;
-          }
-        }
-
-        h3 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 5;
-          font-size: 1.6rem;
-          flex-shrink: 0;
-          width: 250px;
-          height: 67px;
-          padding-top: 19px;
-          text-align: center;
-          background: rgba(0, 0, 0, 0.3);
-
-          @media #{$breakM} {
-            padding-top: 30px;
-            height: 91px;
-          }
-
-          @media #{$breakS} {
-            width: 100%;
-            height: auto;
-            display: block;
-            border: none;
-            padding: 5px 0 10px 13px;
-            text-align: left;
-          }
-
-          &:before {
-            @include icoInline();
-            top: 5px;
-            width: 22px;
-            height: 22px;
-            margin-right: 5px;
-            background: url("#{$imgPath}i_caution_wh.svg") no-repeat center;
-          }
+        @media #{$breakS} {
+          padding-right: 80px;
         }
 
         a,
         span {
           display: flex;
+          align-items: center;
+          height: 62px;
 
-          @media #{$breakM} {
+          @media #{$breakS} {
             flex-wrap: wrap;
+          }
+
+          @media #{$breakS} {
+            height: auto;
+            padding: 15px 0 15px 13px;
           }
 
           .day {
@@ -588,22 +584,6 @@
               padding-top: 1px;
             }
           }
-
-          // .category {
-          //   margin: 0 20px;
-          //   @media #{$breakS} {
-          //     margin: 0 0 0 15px;
-          //   }
-
-          //   span {
-          //     @include icoLabel();
-          //     min-width: 130px;
-          //     border: 1px solid $colorWhite;
-          //     @media #{$breakS} {
-          //       top: -2px;
-          //     }
-          //   }
-          // }
 
           &[target="_blank"] {
             .ttl {
@@ -624,7 +604,7 @@
             }
           }
 
-          .ttl {
+          .name {
             padding-top: 1px;
             text-decoration: underline;
             font-size: 1.8rem;
@@ -633,40 +613,6 @@
               width: 100%;
               margin-top: 5px;
               font-size: 1.6rem;
-            }
-
-            &.pc {
-              @media #{$breakM} {
-                display: none;
-              }
-
-              @media #{$breakS} {
-                display: none;
-              }
-            }
-
-            &.sp {
-              display: none;
-
-              @media #{$breakM} {
-                display: none;
-              }
-
-              @media #{$breakS} {
-                display: block;
-              }
-            }
-
-            &.tb {
-              display: none;
-
-              @media #{$breakM} {
-                display: block;
-              }
-
-              @media #{$breakS} {
-                display: none;
-              }
             }
           }
         }
@@ -1085,7 +1031,7 @@
                   opacity: 1;
 
                   &::before {
-                    background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg) no-repeat center;
+                    background: url(/asset/img/i_arr02_wh.svg) no-repeat center;
                   }
                 }
 
@@ -1483,7 +1429,7 @@
 
                 .union-parent {
                   &::before {
-                    background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_bk.svg) no-repeat center;
+                    background: url(/asset/img/i_arr_bk.svg) no-repeat center;
                     background-size: 14px;
                   }
                 }
@@ -1504,7 +1450,7 @@
                   transform: translateY(-48%);
                   width: 14px;
                   height: 14px;
-                  background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr_wh.svg) no-repeat center;
+                  background: url(/asset/img/i_arr_wh.svg) no-repeat center;
                   background-size: 14px;
                 }
 
@@ -1924,7 +1870,7 @@
                   opacity: 1;
 
                   &::before {
-                    background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr02_wh.svg) no-repeat center;
+                    background: url(/asset/img/i_arr02_wh.svg) no-repeat center;
                   }
                 }
 
@@ -2330,7 +2276,6 @@
       }
     }
   }
-
 
   #vision {
 
@@ -4961,11 +4906,6 @@
     }
   }
 
-
-
-
-
-
   .page-business {
     line-height: 1.9;
 
@@ -5529,7 +5469,6 @@
 
   }
 
-
   .business-model {
     .column_main {
 
@@ -5565,7 +5504,7 @@
           left: initial;
           width: 14px;
           height: 14px;
-          background: url(/wp-content/themes/aisantec.co.jp/asset/img/i_arr.svg) no-repeat center;
+          background: url(/asset/img/i_arr.svg) no-repeat center;
           background-size: 14px;
 
         }
@@ -5993,14 +5932,6 @@
 
     }
   }
-
-
-
-
-
-
-
-
 
   #calendar {
     picture {
@@ -6991,12 +6922,6 @@
     }
 
   }
-
-
-
-
-
-
 
   #page-investors-mv {
 
@@ -8788,17 +8713,6 @@
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
   #challenge-story-mv {
     width: 100%;
     max-width: initial;
@@ -9067,8 +8981,6 @@
 
   }
 
-
-
   #challenge-story-mv.-single {
     margin-bottom: 0;
     padding-top: 0;
@@ -9230,9 +9142,7 @@
       width: 100%;
     }
   }
-
 }
-
 
 .wp-pagenavi {
   display: flex;
@@ -9260,7 +9170,6 @@
     border: 1px solid #005BAC;
   }
 }
-
 
 #modalProduct {
   display: flex;
@@ -9423,7 +9332,6 @@
     }
   }
 }
-
 
 //e-ir
 html {

@@ -307,7 +307,7 @@
         }
       }
     }
-    
+
   }
 
   #chart-Independence {
@@ -1603,12 +1603,13 @@
               left: 3px;
             }
           }
-            &:nth-of-type(11) {
-              a::after {
-                content: "11";
-                left: 4px;
-              }
+
+          &:nth-of-type(11) {
+            a::after {
+              content: "11";
+              left: 4px;
             }
+          }
         }
 
         &.list02 {
@@ -1654,12 +1655,14 @@
                 left: 3px;
               }
             }
+
             &:nth-of-type(7) {
               a::after {
                 content: "18";
                 left: 3px;
               }
             }
+
             &:nth-of-type(8) {
               a::after {
                 content: "19";
@@ -1860,27 +1863,33 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 767px) {
   #page_company #chart-skill div.table-cover.slill-detail img {
     width: 100%;
   }
 }
+
 #page_company #chart-skill div.table-cover.slill-detail .pc {
   display: block;
 }
+
 @media screen and (max-width: 767px) {
   #page_company #chart-skill div.table-cover.slill-detail .pc {
     display: none;
   }
 }
+
 #page_company #chart-skill div.table-cover.slill-detail .sp {
   display: none;
 }
+
 @media screen and (max-width: 767px) {
   #page_company #chart-skill div.table-cover.slill-detail .sp {
     display: block;
   }
 }
+
 @media screen and (max-width: 767px) {
   #page_company #chart-skill div.table-cover.slill-detail .inner {
     width: 100%;
@@ -1893,27 +1902,33 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 767px) {
   #page_ir #director_skill div.table-cover.slill-detail img {
     width: 100%;
   }
 }
+
 #page_ir #director_skill div.table-cover.slill-detail .pc {
   display: block;
 }
+
 @media screen and (max-width: 767px) {
   #page_ir #director_skill div.table-cover.slill-detail .pc {
     display: none;
   }
 }
+
 #page_ir #director_skill div.table-cover.slill-detail .sp {
   display: none;
 }
+
 @media screen and (max-width: 767px) {
   #page_ir #director_skill div.table-cover.slill-detail .sp {
     display: block;
   }
 }
+
 @media screen and (max-width: 767px) {
   #page_ir #director_skill div.table-cover.slill-detail .inner {
     width: 100%;
