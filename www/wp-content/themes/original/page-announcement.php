@@ -26,17 +26,17 @@
         <!-- #electronic_public-notice -->
         <section id="electronic_public-notice">
           <dl>
-            <dt><a href="/ir/announcement/announcement-pdf01.pdf" target="_blank">株券の電子化に伴う特別口座開設公告<span>（291KB）</span></a></dt>
+            <dt><a href="/asset/doc/ir/announcement/announcement-pdf01.pdf" target="_blank">株券の電子化に伴う特別口座開設公告<span>（291KB）</span></a></dt>
             <dd>株式等の取引に係る決済の合理化を図るための社債等の振替に関する法律等の一部を改正する法律<br>附則第8条第1項</dd>
           </dl>
 
           <dl>
-            <dt><a href="/ir/announcement/announcement-pdf02.pdf" target="_blank">第三者割当による自己株式の処分に関する取締役会決議公告<span>（291KB）</span></a></dt>
+            <dt><a href="/asset/doc/ir/announcement/announcement-pdf02.pdf" target="_blank">第三者割当による自己株式の処分に関する取締役会決議公告<span>（291KB）</span></a></dt>
             <dd>会社法第201条第3項及び第4項</dd>
           </dl>
 
           <dl>
-            <dt><a href="/ir/announcement/announcement-pdf03.pdf" target="_blank">譲渡制限付株式報酬制度の導入に伴う募集株式の発行に関する取締役会決議公告<span>（291KB）</span></a></dt>
+            <dt><a href="/asset/doc/ir/announcement/announcement-pdf03.pdf" target="_blank">譲渡制限付株式報酬制度の導入に伴う募集株式の発行に関する取締役会決議公告<span>（291KB）</span></a></dt>
             <dd>会社法第201条第3項及び第4項</dd>
           </dl>
 

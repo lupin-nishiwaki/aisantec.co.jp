@@ -32,8 +32,8 @@
           <p class="txt">当社は創業以来、「社是・経営理念」のもと、事業活動を通じて社会から信頼される企業であることを目指してきました。企業の社会的責任という考え方は、当社にとって特別なものではなく、創業以来取り組んできた企業活動そのものと認識しています。当社は、「社是・経営理念」の精神に則り、CSR活動を進めています。この基本的な考え方のもと、コーポレート・ガバナンス、コンプライアンス体制を整えるとともに、当社の主要ステークホルダーとのコミュニケーションを通じて、社会の変化に合わせた企業活動を推進し、持続可能な社会の実現を目指しています。</p>
 
           <ul class="list m_list_document">
-            <li><a href="/wp-content/themes/aisantec.co.jp/ir/announcement/mt-preview-edit-zm20211102-1.pdf" target="_blank">「コーポレート・ガバナンス報告書 2021年11月2日提出(PDF)」</a></li>
-            <li><a href="/wp-content/themes/aisantec.co.jp/ir/announcement/「コーポレートガバナンス・コード」に対する当社グループの取組み.pdf" target="_blank">「コーポレートガバナンス・コード」に対する当社グループの取り組み(PDF)</a></li>
+            <li><a href="/asset/doc/ir/announcement/mt-preview-edit-zm20211102-1.pdf" target="_blank">「コーポレート・ガバナンス報告書 2021年11月2日提出(PDF)」</a></li>
+            <li><a href="/asset/doc/ir/announcement/「コーポレートガバナンス・コード」に対する当社グループの取組み.pdf" target="_blank">「コーポレートガバナンス・コード」に対する当社グループの取り組み(PDF)</a></li>
           </ul>
 
           <h3 class="m_txt_h3">コーポレート・ガバナンスに関する基本的な考え方</h3>
