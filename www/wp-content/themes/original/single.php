@@ -5,7 +5,7 @@
   <section id="path">
     <div class="m_box_fixed">
       <ul>
-        <li><a href="https://www.aisantec.co.jp/">ホーム</a></li>
+        <li><a href="/">ホーム</a></li>
         <li><?php the_title(); ?></li>
       </ul>
     </div>

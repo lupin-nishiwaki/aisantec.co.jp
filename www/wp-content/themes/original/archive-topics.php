@@ -5,7 +5,7 @@
   <section id="path">
     <div class="m_box_fixed">
       <ul>
-        <li><a href="https://www.aisantec.co.jp/">ホーム</a></li>
+        <li><a href="/">ホーム</a></li>
         <li><a href="/ir/">IR・投資家情報</a></li>
         <li>トピックス一覧</li>
       </ul>

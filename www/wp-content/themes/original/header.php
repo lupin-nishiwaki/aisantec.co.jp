@@ -138,7 +138,7 @@
   <!-- #l_header -->
   <header id="l_header" class="js_scroll_fixed">
     <p class="logo">
-      <a href="https://www.aisantec.co.jp/"><img src="/asset/img/logo.svg" alt="アイサンテクノロジー株式会社"></a>
+      <a href="/"><img src="/asset/img/logo.svg" alt="アイサンテクノロジー株式会社"></a>
     </p>
 
     <nav class="nav js_drawr">
@@ -158,11 +158,11 @@
           </li>
 
           <li class="language">
-            <a href="https://www.aisantec.co.jp/english/">ENGLISH</a>
+            <a href="/english/">ENGLISH</a>
           </li>
         </ul>
 
-        <form method="get" action="https://www.aisantec.co.jp/cgi-bin/pcms/mt-search.cgi" _lpchecked="1">
+        <form method="get" action="/cgi-bin/pcms/mt-search.cgi" _lpchecked="1">
           <input type="hidden" name="IncludeBlogs" value="1,2,3,7,8,9,11,12,13,14,15,16,17,18">
           <input type="hidden" name="limit" value="20">
           <input type="text" id="search" name="search" placeholder="キーワード検索">
@@ -172,11 +172,11 @@
 
       <ul class="gnav js_sitemap_acc">
         <li>
-          <a href="https://www.aisantec.co.jp/products-services/">製品・サービス</a>
+          <a href="/products-services/">製品・サービス</a>
         </li>
 
         <li>
-          <a href="https://www.aisantec.co.jp/techinfo/">技術情報</a>
+          <a href="/techinfo/">技術情報</a>
         </li>
 
         <li>

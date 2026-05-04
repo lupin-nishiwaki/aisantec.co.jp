@@ -152,11 +152,11 @@
 
             <div class="sub">
               <dl>
-                <dt><a href="https://www.aisantec.co.jp/products-services/">製品・サービス</a></dt>
+                <dt><a href="/products-services/">製品・サービス</a></dt>
               </dl>
 
               <dl>
-                <dt><a href="https://www.aisantec.co.jp/techinfo/">技術情報</a></dt>
+                <dt><a href="/techinfo/">技術情報</a></dt>
               </dl>
 
               <dl class="recruit">
@@ -173,12 +173,12 @@
         <div class="m_box_fixed">
           <div class="row">
             <p class="logo">
-              <a href="https://www.aisantec.co.jp/"><img src="/asset/img/logo_wh.svg" alt="アイサンテクノロジー株式会社"></a>
+              <a href="/"><img src="/asset/img/logo_wh.svg" alt="アイサンテクノロジー株式会社"></a>
             </p>
 
             <ul>
-              <li><a href="https://www.aisantec.co.jp/privacy/" target="_blank">個人情報の取り扱い</a></li>
-              <li><a href="https://www.aisantec.co.jp/about/" target="_blank">このサイトについて</a></li>
+              <li><a href="/privacy/" target="_blank">個人情報の取り扱い</a></li>
+              <li><a href="/about/" target="_blank">このサイトについて</a></li>
             </ul>
 
             <p class="copy">&copy; AISAN TECHNOLOGY CO., LTD.</p>
