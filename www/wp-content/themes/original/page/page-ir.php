@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: IR・投資家情報
+ */
+
+get_header();
+?>
 
 <div id="page_ir">
   <!-- #path -->

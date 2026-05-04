@@ -24,9 +24,9 @@
                         <li><a href="/ir/management/business/">事業概要</a></li>
                         <li><a href="/ir/management/sustainability/">サステナビリティ</a></li>
                         <li><a href="/ir/management/disclosure/">IR・ディスクロージャーポリシー</a></li>
-                        <li><a href="/ir/management/capital-costs-stock-prices/">資本コストや株価を意識した経営</a></li><!--  //2024-04-28 更新 -->
+                        <li><a href="/ir/management/capital-costs-stock-prices/">資本コストや株価を意識した経営</a></li>
                         <li><a href="/ir/management/human-management/">人的資本経営</a></li>
-                        <li><a href="/ir/management/dx-strategy/">DX戦略</a></li><!--  //2024-04-28 更新 -->
+                        <li><a href="/ir/management/dx-strategy/">DX戦略</a></li>
                         <li><a href="/ir/management/business-model/">事業別収益モデル</a></li>
                       </ul>
                     </dd>
@@ -74,27 +74,13 @@
                     <dt><a href="/topics/">トピックス一覧</a><i></i></dt>
                   </dl>
 
-                  <!-- <dl class="sec">
-                    <dt><a href="/ir/information/">ニュース一覧</a><i></i></dt>
-                    <dd>
-                      <ul>
-                        <li><a href="/ir/information/">お知らせ一覧</a></li>
-                        <li><a href="/ir/information/">決算・適時開示</a></li>
-                        <li><a href="/ir/information/">IR資料</a></li>
-                        <li><a href="/ir/information/">お知らせ</a></li>
-                      </ul>
-                    </dd>
-                  </dl> -->
-
                   <dl class="sec">
                     <dt><a href="/ir/library/">IRライブラリ</a><i></i></dt>
                     <dd>
                       <ul>
                         <li><a href="/ir/library/report-brief/">決算短信・決算説明資料</a></li>
-                        <!-- <li><a href="/ir/library/report-corporate/">コーポレートレポート</a></li> -->
                         <li><a href="/ir/library/report-securities/">有価証券報告書</a></li>
                         <li><a href="/ir/library/sessionsettlement/">会社説明会・決算説明会</a></li>
-                        <!-- <li><a href="/ir/library/sessioncompany/">会社説明会</a></li> -->
                         <li><a href="/ir/library/report/">その他資料</a></li>
                       </ul>
                     </dd>
@@ -135,7 +121,6 @@
 
                   <dl class="sec">
                     <dt>
-                      <!-- <a href="/ir/delivery/">IR情報メール配信サービス</a> -->
                       <a href="https://rims.tr.mufg.jp/?sn=4667" target="_blank">IR情報メール配信サービス</a>
                     </dt>
 

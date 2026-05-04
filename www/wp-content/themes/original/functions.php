@@ -12,6 +12,16 @@
 // add_filter( 'automatic_updater_disabled', '__return_true' );
 
 /*======================================
+固定ページをクラシックエディタにする
+======================================*/
+add_filter('use_block_editor_for_post_type', function($use_block_editor, $post_type) {
+  if ($post_type === 'page') {
+    return false; // 固定ページだけクラシックエディタ
+  }
+  return $use_block_editor;
+}, 10, 2);
+
+/*======================================
 初期設定
 タイトル・アイキャッチ画像・CSS・JSを読み込む
 ======================================*/
@@ -63,6 +73,64 @@ function shortcode_contactForm(){
 	return $msg;
 }
 add_shortcode('contact-form', 'shortcode_contactForm');
+
+function shortcode_ir_investors() {
+  ob_start();
+  ?>
+  <div class="frame-group">
+    <?php
+    $args = array(
+      'posts_per_page' => 2,
+      'post_type'      => 'challenge-story',
+      'orderby'        => 'date',
+      'order'          => 'DESC',
+    );
+
+    $the_query = new WP_Query($args);
+    ?>
+
+    <?php if ($the_query->have_posts()): ?>
+      <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+
+        <a href="<?php the_permalink(); ?>" class="frame-container">
+          <div class="frame-child">
+            <?php if (has_post_thumbnail()): ?>
+              <img class="gradient-icon1" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">
+            <?php else: ?>
+              <img class="gradient-icon1" src="<?php echo get_template_directory_uri(); ?>/asset/img/no-image.png" alt="<?php the_title_attribute(); ?>">
+            <?php endif; ?>
+          </div>
+
+          <div class="frame-div">
+            <?php $terms = get_the_terms(get_the_ID(), 'story_category'); ?>
+            <?php if (!empty($terms) && !is_wp_error($terms)): ?>
+              <?php foreach ($terms as $term): ?>
+                <p class="wrapper">
+                  <b class="div3"><?php echo esc_html($term->name); ?></b>
+                </p>
+              <?php endforeach; ?>
+            <?php endif; ?>
+
+            <div class="group">
+              <div class="div4">
+                <div class="div5"><?php the_title(); ?></div>
+              </div>
+              <div class="div6"><?php echo get_the_date('Y年n月j日'); ?></div>
+            </div>
+          </div>
+        </a>
+
+      <?php endwhile; ?>
+    <?php endif; ?>
+
+    <?php wp_reset_postdata(); ?>
+  </div>
+  <?php
+
+  return ob_get_clean();
+}
+add_shortcode('ir_investors', 'shortcode_ir_investors');
+
 
 /*======================================
 コンタクトフォームのショートコード作成

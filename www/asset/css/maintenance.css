@@ -1,1 +1,114 @@
-#page_ir #information_statuscompbig .table-cover table td,#page_ir #information_statuscompare .table-cover table td,#page_ir #reward_policy .dl-wrap .dl-block div.table-cover .inner dl dd p.right,#page_ir #vision_growth .table-cover table td,#page_ir #vision_performance .table-cover table td,#page_ir #vision_dividend .table-cover table td,#page_ir #owned_brand .table-cover table td,.qirContent_table td,#page_ir #information_status dl dd,#human-management-think .table-cover .wrap dd dl.inner dd{font-family:"Noto Sans JP","Noto Sans JP",YuGothic,"Yu Gothic","Meiryo","メイリオ","MS PGothic","ＭＳ Ｐゴシック",sans-serif}#page_ir #information_status dl{padding:0}#page_company #group04 div.table-cover .inner{display:-webkit-box;display:-ms-flexbox;display:flex;min-width:0;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}#page_company #group04 div.table-cover .inner dt,#page_company #group04 div.table-cover .inner dd{border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;-webkit-box-sizing:border-box;box-sizing:border-box;padding:8px 10px}#page_company #group04 div.table-cover .inner dt{width:200px;background-color:#707070;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#page_company #group04 div.table-cover .inner dd{width:calc(100% - 200px)}#page_company #group04 iframe{width:100%;height:320px;margin-top:5px}#page_company #group-link ul li{width:calc(25% - 10px)}#page_company #group04 .scroll{display:none;margin-top:10px;font-weight:700;text-align:right}#page_company #group04 div.table-cover .inner dd a.map{position:relative;padding-right:5px;display:inline-block;color:#005bac}#page_company #group04 div.table-cover .inner dd a.map::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/wp-content/themes/aisantec.co.jp/asset/img/i_blank_blue.svg) no-repeat center;background-size:12px auto}@media screen and (max-width: 767px){#page_company #group-link ul li{width:100%}#page_company #group04 div.table-cover .inner-wrap{overflow-x:scroll}#page_company #group04 div.table-cover .inner{width:700px}#page_company #group04 .scroll{display:block;font-size:1rem}}#human-management-policy .box{margin-top:50px}#human-management-policy .box>dl{margin-top:40px;display:-webkit-box;display:-ms-flexbox;display:flex;gap:0 10px}@media screen and (max-width: 767px){#human-management-policy .box>dl{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px 0}}#human-management-policy .box>dl:nth-child(1) dt span::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/human/icon-human01.svg) no-repeat center;background-size:contain}#human-management-policy .box>dl:nth-child(2) dt span::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/human/icon-human02.svg) no-repeat center;background-size:contain}#human-management-policy .box>dl:nth-child(3) dt span::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/human/icon-human-2.svg) no-repeat center;background-size:contain}#human-management-policy .box>dl:nth-child(4) dt span::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/human/icon-human03.svg) no-repeat center;background-size:contain}#human-management-policy .box>dl:nth-child(5) dt span::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/human/icon-human04.svg) no-repeat center;background-size:contain}.box>dl:nth-child(6) dt span::before{background:url(/wp-content/themes/aisantec.co.jp/asset/img/ir/human/icon-human05.svg) no-repeat center;background-size:contain}#human-management-policy .box>dl dt{background-color:#edf6fe;display:grid;place-content:center;width:270px}@media screen and (max-width: 767px){#human-management-policy .box>dl dt{width:100%;min-height:100px}}#human-management-policy .box>dl dt span{display:inline-block;padding-left:60px;color:#005bac;position:relative}#human-management-policy .box>dl dt span::before{position:absolute;content:"";display:inline-block;width:44px;height:44px;top:0;bottom:0;margin:auto 0;left:0}#human-management-policy .box>dl dd{width:calc(100% - 280px)}@media screen and (max-width: 767px){#human-management-policy .box>dl dd{width:100%}}@media screen and (max-width: 767px){#human-management-think .table-cover .inner-content{overflow-x:scroll}}@media screen and (max-width: 767px){#human-management-think .table-cover .inner-content>div{width:700px}}#human-management-think .table-cover .grid-wrap{display:grid;grid-template-areas:"grid-header grid-header grid-header grid-header grid-header" "grid-header-child01dt grid-header-child01dt  grid-header-child01dt grid-header-child01dd grid-header-child01dd" "grid-header-child02dt grid-header-child02dt  grid-header-child02dt grid-header-child02dd grid-header-child02dd" "grid-header-child03 grid-header-child03 grid-header-child-c01dt grid-header-child-c01dd grid-header-child-c01dd" "grid-header-child03 grid-header-child03 grid-header-child-c02dt grid-header-child-c02dd grid-header-child-c02dd" "grid-header-child03 grid-header-child03 grid-header-child-c03dt grid-header-child-c03dd grid-header-child-c03dd"}#human-management-think .table-cover .grid-wrap .grid-header{grid-area:grid-header}#human-management-think .table-cover .grid-wrap .grid-header-child01dt{grid-area:grid-header-child01dt}#human-management-think .table-cover .grid-wrap .grid-header-child02dt{grid-area:grid-header-child02dt}#human-management-think .table-cover .grid-wrap .grid-header-child01dd{grid-area:grid-header-child01dd}#human-management-think .table-cover .grid-wrap .grid-header-child02dd{grid-area:grid-header-child02dd}#human-management-think .table-cover .grid-wrap .grid-header-child03{grid-area:grid-header-child03}#human-management-think .table-cover .grid-wrap .grid-header-child-c01dt{grid-area:grid-header-child-c01dt}#human-management-think .table-cover .grid-wrap .grid-header-child-c01dd{grid-area:grid-header-child-c01dd}#human-management-think .table-cover .grid-wrap .grid-header-child-c02dt{grid-area:grid-header-child-c02dt}#human-management-think .table-cover .grid-wrap .grid-header-child-c02dd{grid-area:grid-header-child-c02dd}#human-management-think .table-cover .grid-wrap .grid-header-child-c03dt{grid-area:grid-header-child-c03dt}#human-management-think .table-cover .grid-wrap .grid-header-child-c03dd{grid-area:grid-header-child-c03dd}#human-management-think .table-cover .wrap>*{padding:8px 10px}#human-management-think .table-cover .wrap .f-bold{font-weight:700}#human-management-think .table-cover .wrap .c-white{color:#fff}#human-management-think .table-cover .wrap .bc-gray{background:#707070}#human-management-think .table-cover .wrap .num{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end}#human-management-think .table-cover .wrap .border-bottom{border-bottom:1px solid #ddd}#human-management-think .table-cover .wrap .border-b-l{border-bottom:1px solid #ddd;border-left:1px solid #ddd}#human-management-think .table-cover .wrap .border-b-r{border-bottom:1px solid #ddd;border-right:1px solid #ddd}#human-management-think .table-cover .wrap dt{background:#707070;color:#fff;padding:8px 10px;font-weight:700;border-bottom:1px solid #ddd}#human-management-think .table-cover .wrap dd dl.inner-content>dt{background:#707070;color:#fff;font-weight:700;border-bottom:1px solid #ddd;border-right:1px solid #ddd}#human-management-think .table-cover .wrap dd dl.inner-content dd{color:#333;text-align:right;border-bottom:1px solid #ddd}#human-management-think .table-cover .wrap dd dl.inner-content>dd.border{border-right:1px solid #ddd;padding:8px 10px}#human-management-think .table-cover .wrap dd dl.inner-content>dd dl.innner-child dd{text-align:right;border-bottom:1px solid #ddd;border-right:1px solid #ddd;padding:8px 10px}#human-management-think .table-cover .wrap dd dl.inner-content.last dt{text-align:left;border-bottom:1px solid #ddd;border-right:1px solid #ddd}#human-management-think .note-list{margin-top:20px}#human-management-think .note-list li{padding-left:57px;margin-top:10px;position:relative}#human-management-think .note-list li::before{position:absolute;top:0;bottom:0;left:0;margin:auto 0}#human-management-think .note-list li:nth-child(1)::before{content:"(注) 1 "}#human-management-think .note-list li:nth-child(2)::before{content:"(注) 2 "}@media screen and (max-width: 767px){#human-management-think .table-wrap{overflow-x:scroll}}#human-management-think .table{border-top:1px solid #ddd}@media screen and (max-width: 767px){#human-management-think .table{width:700px}}#human-management-think .table dl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:#707070;border-bottom:1px solid #ddd;border-right:1px solid #ddd}#human-management-think .table dl dt{color:#fff;font-weight:700;width:300px;padding:8px 10px}#human-management-think .table dl dd{padding:8px 10px;width:calc(100% - 300px);background:#fff}.parenting .box:not(:first-child){margin-top:30px}@media screen and (max-width: 767px){.parenting .box:not(:first-child){margin-top:20px}}.parenting .box ul li div.table-cover{margin:15px 0}@media screen and (max-width: 767px){.parenting .box ul li div.table-cover .inner-wrap{overflow-x:scroll}}.parenting .box ul li div.table-cover .inner{display:-webkit-box;display:-ms-flexbox;display:flex;min-width:0;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}@media screen and (max-width: 767px){.parenting .box ul li div.table-cover .inner{width:700px}}.parenting .box ul li div.table-cover .inner dt,.parenting .box ul li div.table-cover .inner dd{border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;-webkit-box-sizing:border-box;box-sizing:border-box;padding:8px 10px;width:calc(100% - 200px)}.parenting .box ul li div.table-cover .inner dt{width:200px;background-color:#005bac;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center}.parenting .box ul li div.table-cover .scroll{display:none;font-size:1rem;margin-top:10px;font-weight:700;text-align:right}@media screen and (max-width: 767px){.parenting .box ul li div.table-cover .scroll{display:block}}.parenting .box p.koho{margin-top:10px}.parenting .box a.link{color:#005bac}.parenting .box .note{color:#005bac;word-break:break-all;display:block}.parenting .box .behavioral01{margin-top:10px;width:240px;border:1px solid #ebebeb}.parenting .box .plan dt{font-weight:700;position:relative;padding-bottom:3px;margin:20px 0 10px;border-bottom:1px solid #ebebeb}.parenting .box .plan dt.is-accordion::after{background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_close_bk.svg) no-repeat center}.parenting .box .plan dt::after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/wp-content/themes/aisantec.co.jp/asset/img//i_open_bk.svg) no-repeat center;background-size:18px auto !important;-webkit-transition:background .3s;transition:background .3s}#compliance .parenting .box .text a{text-decoration:underline;color:#005bac;font-weight:700}
+#page_ir #information_statuscompbig .table-cover table td,#page_ir #information_statuscompare .table-cover table td,#page_ir #reward_policy .dl-wrap .dl-block div.table-cover .inner dl dd p.right,#page_ir #vision_growth .table-cover table td,#page_ir #vision_performance .table-cover table td,#page_ir #vision_dividend .table-cover table td,#page_ir #owned_brand .table-cover table td,.qirContent_table td,#page_ir #information_status dl dd,#human-management-think .table-cover .wrap dd dl.inner dd{font-family:"Noto Sans JP","Noto Sans JP",YuGothic,"Yu Gothic","Meiryo","メイリオ","MS PGothic","ＭＳ Ｐゴシック",sans-serif}
+#page_ir #information_status dl{padding:0}
+#page_company #group04 div.table-cover .inner{display:-webkit-box;display:-ms-flexbox;display:flex;min-width:0;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+#page_company #group04 div.table-cover .inner dt,#page_company #group04 div.table-cover .inner dd{border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;-webkit-box-sizing:border-box;box-sizing:border-box;padding:8px 10px}
+#page_company #group04 div.table-cover .inner dt{width:200px;background-color:#707070;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+#page_company #group04 div.table-cover .inner dd{width:calc(100% - 200px)}
+#page_company #group04 iframe{width:100%;height:320px;margin-top:5px}
+#page_company #group-link ul li{width:calc(25% - 10px)}
+#page_company #group04 .scroll{display:none;margin-top:10px;font-weight:700;text-align:right}
+#page_company #group04 div.table-cover .inner dd a.map{position:relative;padding-right:5px;display:inline-block;color:#005bac}
+#page_company #group04 div.table-cover .inner dd a.map::before{position:absolute;content:"";display:inline-block;top:0;bottom:0;margin:auto 0;right:-10px;width:12px;height:12px;background:url(/asset/img/i_blank_blue.svg) no-repeat center;background-size:12px auto}
+@media screen and (max-width: 767px){
+#page_company #group-link ul li{width:100%}
+#page_company #group04 div.table-cover .inner-wrap{overflow-x:scroll}
+#page_company #group04 div.table-cover .inner{width:700px}
+#page_company #group04 .scroll{display:block;font-size:1rem}
+}
+#human-management-policy .box{margin-top:50px}
+#human-management-policy .box>dl{margin-top:40px;display:-webkit-box;display:-ms-flexbox;display:flex;gap:0 10px}
+@media screen and (max-width: 767px){
+#human-management-policy .box>dl{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px 0}
+}
+#human-management-policy .box>dl:nth-child(1) dt span::before{background:url(/asset/img/ir/human/icon-human01.svg) no-repeat center;background-size:contain}
+#human-management-policy .box>dl:nth-child(2) dt span::before{background:url(/asset/img/ir/human/icon-human02.svg) no-repeat center;background-size:contain}
+#human-management-policy .box>dl:nth-child(3) dt span::before{background:url(/asset/img/ir/human/icon-human-2.svg) no-repeat center;background-size:contain}
+#human-management-policy .box>dl:nth-child(4) dt span::before{background:url(/asset/img/ir/human/icon-human03.svg) no-repeat center;background-size:contain}
+#human-management-policy .box>dl:nth-child(5) dt span::before{background:url(/asset/img/ir/human/icon-human04.svg) no-repeat center;background-size:contain}
+.box>dl:nth-child(6) dt span::before{background:url(/asset/img/ir/human/icon-human05.svg) no-repeat center;background-size:contain}
+#human-management-policy .box>dl dt{background-color:#edf6fe;display:grid;place-content:center;width:270px}
+@media screen and (max-width: 767px){
+#human-management-policy .box>dl dt{width:100%;min-height:100px}
+}
+#human-management-policy .box>dl dt span{display:inline-block;padding-left:60px;color:#005bac;position:relative}
+#human-management-policy .box>dl dt span::before{position:absolute;content:"";display:inline-block;width:44px;height:44px;top:0;bottom:0;margin:auto 0;left:0}
+#human-management-policy .box>dl dd{width:calc(100% - 280px)}
+@media screen and (max-width: 767px){
+#human-management-policy .box>dl dd{width:100%}
+}
+@media screen and (max-width: 767px){
+#human-management-think .table-cover .inner-content{overflow-x:scroll}
+}
+@media screen and (max-width: 767px){
+#human-management-think .table-cover .inner-content>div{width:700px}
+}
+#human-management-think .table-cover .grid-wrap{display:grid;grid-template-areas:"grid-header grid-header grid-header grid-header grid-header" "grid-header-child01dt grid-header-child01dt  grid-header-child01dt grid-header-child01dd grid-header-child01dd" "grid-header-child02dt grid-header-child02dt  grid-header-child02dt grid-header-child02dd grid-header-child02dd" "grid-header-child03 grid-header-child03 grid-header-child-c01dt grid-header-child-c01dd grid-header-child-c01dd" "grid-header-child03 grid-header-child03 grid-header-child-c02dt grid-header-child-c02dd grid-header-child-c02dd" "grid-header-child03 grid-header-child03 grid-header-child-c03dt grid-header-child-c03dd grid-header-child-c03dd"}
+#human-management-think .table-cover .grid-wrap .grid-header{grid-area:grid-header}
+#human-management-think .table-cover .grid-wrap .grid-header-child01dt{grid-area:grid-header-child01dt}
+#human-management-think .table-cover .grid-wrap .grid-header-child02dt{grid-area:grid-header-child02dt}
+#human-management-think .table-cover .grid-wrap .grid-header-child01dd{grid-area:grid-header-child01dd}
+#human-management-think .table-cover .grid-wrap .grid-header-child02dd{grid-area:grid-header-child02dd}
+#human-management-think .table-cover .grid-wrap .grid-header-child03{grid-area:grid-header-child03}
+#human-management-think .table-cover .grid-wrap .grid-header-child-c01dt{grid-area:grid-header-child-c01dt}
+#human-management-think .table-cover .grid-wrap .grid-header-child-c01dd{grid-area:grid-header-child-c01dd}
+#human-management-think .table-cover .grid-wrap .grid-header-child-c02dt{grid-area:grid-header-child-c02dt}
+#human-management-think .table-cover .grid-wrap .grid-header-child-c02dd{grid-area:grid-header-child-c02dd}
+#human-management-think .table-cover .grid-wrap .grid-header-child-c03dt{grid-area:grid-header-child-c03dt}
+#human-management-think .table-cover .grid-wrap .grid-header-child-c03dd{grid-area:grid-header-child-c03dd}
+#human-management-think .table-cover .wrap>*{padding:8px 10px}
+#human-management-think .table-cover .wrap .f-bold{font-weight:700}
+#human-management-think .table-cover .wrap .c-white{color:#fff}
+#human-management-think .table-cover .wrap .bc-gray{background:#707070}
+#human-management-think .table-cover .wrap .num{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end}
+#human-management-think .table-cover .wrap .border-bottom{border-bottom:1px solid #ddd}
+#human-management-think .table-cover .wrap .border-b-l{border-bottom:1px solid #ddd;border-left:1px solid #ddd}
+#human-management-think .table-cover .wrap .border-b-r{border-bottom:1px solid #ddd;border-right:1px solid #ddd}
+#human-management-think .table-cover .wrap dt{background:#707070;color:#fff;padding:8px 10px;font-weight:700;border-bottom:1px solid #ddd}
+#human-management-think .table-cover .wrap dd dl.inner-content>dt{background:#707070;color:#fff;font-weight:700;border-bottom:1px solid #ddd;border-right:1px solid #ddd}
+#human-management-think .table-cover .wrap dd dl.inner-content dd{color:#333;text-align:right;border-bottom:1px solid #ddd}
+#human-management-think .table-cover .wrap dd dl.inner-content>dd.border{border-right:1px solid #ddd;padding:8px 10px}
+#human-management-think .table-cover .wrap dd dl.inner-content>dd dl.innner-child dd{text-align:right;border-bottom:1px solid #ddd;border-right:1px solid #ddd;padding:8px 10px}
+#human-management-think .table-cover .wrap dd dl.inner-content.last dt{text-align:left;border-bottom:1px solid #ddd;border-right:1px solid #ddd}
+#human-management-think .note-list{margin-top:20px}
+#human-management-think .note-list li{padding-left:57px;margin-top:10px;position:relative}
+#human-management-think .note-list li::before{position:absolute;top:0;bottom:0;left:0;margin:auto 0}
+#human-management-think .note-list li:nth-child(1)::before{content:"(注) 1 "}
+#human-management-think .note-list li:nth-child(2)::before{content:"(注) 2 "}
+@media screen and (max-width: 767px){
+#human-management-think .table-wrap{overflow-x:scroll}
+}
+#human-management-think .table{border-top:1px solid #ddd}
+@media screen and (max-width: 767px){
+#human-management-think .table{width:700px}
+}
+#human-management-think .table dl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:#707070;border-bottom:1px solid #ddd;border-right:1px solid #ddd}
+#human-management-think .table dl dt{color:#fff;font-weight:700;width:300px;padding:8px 10px}
+#human-management-think .table dl dd{padding:8px 10px;width:calc(100% - 300px);background:#fff}
+.parenting .box:not(:first-child){
+margin-top:30px}
+@media screen and (max-width: 767px){
+.parenting .box:not(:first-child){
+margin-top:20px}
+}
+.parenting .box ul li div.table-cover{margin:15px 0}
+@media screen and (max-width: 767px){
+.parenting .box ul li div.table-cover .inner-wrap{overflow-x:scroll}
+}
+.parenting .box ul li div.table-cover .inner{display:-webkit-box;display:-ms-flexbox;display:flex;min-width:0;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+@media screen and (max-width: 767px){
+.parenting .box ul li div.table-cover .inner{width:700px}
+}
+.parenting .box ul li div.table-cover .inner dt,.parenting .box ul li div.table-cover .inner dd{border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;-webkit-box-sizing:border-box;box-sizing:border-box;padding:8px 10px;width:calc(100% - 200px)}
+.parenting .box ul li div.table-cover .inner dt{width:200px;background-color:#005bac;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center}
+.parenting .box ul li div.table-cover .scroll{display:none;font-size:1rem;margin-top:10px;font-weight:700;text-align:right}
+@media screen and (max-width: 767px){
+.parenting .box ul li div.table-cover .scroll{display:block}
+}
+.parenting .box p.koho{margin-top:10px}
+.parenting .box a.link{color:#005bac}
+.parenting .box .note{color:#005bac;word-break:break-all;display:block}
+.parenting .box .behavioral01{margin-top:10px;width:240px;border:1px solid #ebebeb}
+.parenting .box .plan dt{font-weight:700;position:relative;padding-bottom:3px;margin:20px 0 10px;border-bottom:1px solid #ebebeb}
+.parenting .box .plan dt.is-accordion::after{background:url(/asset/img//i_close_bk.svg) no-repeat center}
+.parenting .box .plan dt::after{content:"";position:absolute;margin:auto;top:0;bottom:0;right:0;width:51px;height:51px;background:url(/asset/img//i_open_bk.svg) no-repeat center;background-size:18px auto !important;-webkit-transition:background .3s;transition:background .3s}
+#compliance .parenting .box .text a{text-decoration:underline;color:#005bac;font-weight:700}
